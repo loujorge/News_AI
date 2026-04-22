@@ -1,55 +1,72 @@
 import feedparser
-import requests
 import os
+from datetime import datetime
 
-# Lista de fontes de elite para AI
+# Fontes de elite
 FEEDS = [
     "https://techcrunch.com/category/artificial-intelligence/feed/",
     "https://openai.com/news/rss.xml",
     "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
 ]
 
-SLACK_WEBHOOK = os.getenv('SLACK_WEBHOOK_URL')
-HISTORY_FILE = "sent_news.txt"
-
-def get_history():
-    if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "r") as f:
-            return set(f.read().splitlines())
-    return set()
-
-def save_history(links):
-    with open(HISTORY_FILE, "a") as f:
-        for link in links:
-            f.write(link + "\n")
-
-def get_latest_news():
-    history = get_history()
-    new_links = []
-    message_blocks = []
+def get_data():
+    articles = []
+    slack_text = "*🚀 Daily AI News & Briefing*\n\n"
     
     for url in FEEDS:
-        print(f"A ler: {url}")
         feed = feedparser.parse(url)
-        for entry in feed.entries[:3]: # 3 de cada fonte
-            if entry.link not in history:
-                message_blocks.append(f"• *{entry.title}*\n<{entry.link}|Ler artigo>")
-                new_links.append(entry.link)
+        for entry in feed.entries[:3]:
+            articles.append({
+                "title": entry.title,
+                "link": entry.link,
+                "summary": entry.get('summary', 'Clica no link para mais detalhes.')[:250] + "..."
+            })
+            slack_text += f"• *{entry.title}*\n<{entry.link}|Ler original>\n"
+    
+    return articles, slack_text
 
-    if not message_blocks:
-        return None, []
-
-    final_message = "*🚀 Top Daily AI News for Devs:*\n\n" + "\n\n".join(message_blocks[:8])
-    return final_message, new_links
-
-def send_to_slack(text):
-    requests.post(SLACK_WEBHOOK, json={"text": text})
+def generate_html(articles):
+    date_str = datetime.now().strftime("%d/%m/%Y")
+    
+    cards = ""
+    for art in articles:
+        cards += f"""
+        <div class="card">
+            <h2>{art['title']}</h2>
+            <p>{art['summary']}</p>
+            <a href="{art['link']}" target="_blank">Ver mais</a>
+        </div>
+        """
+    
+    template = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Briefing {date_str}</title>
+        <style>
+            body {{ font-family: sans-serif; background: #121212; color: white; max-width: 700px; margin: auto; padding: 20px; }}
+            h1 {{ color: #00d1b2; border-bottom: 1px solid #333; }}
+            .card {{ background: #1e1e1e; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #333; }}
+            a {{ color: #00d1b2; text-decoration: none; font-weight: bold; }}
+            p {{ color: #aaa; font-size: 0.9rem; }}
+        </style>
+    </head>
+    <body>
+        <h1>Briefing AI - {date_str}</h1>
+        {cards}
+    </body>
+    </html>
+    """
+    
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(template)
 
 if __name__ == "__main__":
-    content, links = get_latest_news()
-    if content:
-        send_to_slack(content)
-        save_history(links)
-        print(f"Enviadas {len(links)} notícias novas.")
-    else:
-        print("Sem notícias novas hoje.")
+    articles, slack_text = get_data()
+    generate_html(articles)
+    
+    # Exportar o texto do Slack para o ambiente do GitHub Actions
+    with open("slack_payload.txt", "w", encoding="utf-8") as f:
+        f.write(slack_text)
