@@ -23,3 +23,11 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python news_bot.py
+
+      - name: Commit and push if history changed
+        run: |
+          git config --global user.name "AI News Bot"
+          git config --global user.email "bot@github.com"
+          git add sent_news.txt || true
+          git commit -m "Update news history" || true
+          git push || true
