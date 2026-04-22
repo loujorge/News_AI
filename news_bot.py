@@ -2,41 +2,54 @@ import feedparser
 import requests
 import os
 
-# Usando um feed mais estável (TechCrunch AI ou um agregador mais genérico)
-RSS_URL = "https://techcrunch.com/category/artificial-intelligence/feed/"
+# Lista de fontes de elite para AI
+FEEDS = [
+    "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "https://openai.com/news/rss.xml",
+    "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
+]
+
 SLACK_WEBHOOK = os.getenv('SLACK_WEBHOOK_URL')
+HISTORY_FILE = "sent_news.txt"
+
+def get_history():
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r") as f:
+            return set(f.read().splitlines())
+    return set()
+
+def save_history(links):
+    with open(HISTORY_FILE, "a") as f:
+        for link in links:
+            f.write(link + "\n")
 
 def get_latest_news():
-    print(f"A aceder ao feed: {RSS_URL}")
-    feed = feedparser.parse(RSS_URL)
+    history = get_history()
+    new_links = []
+    message_blocks = []
     
-    # Debug: Ver quantas notícias o script encontrou
-    print(f"Notícias encontradas: {len(feed.entries)}")
-    
-    if not feed.entries:
-        return "Nenhuma notícia nova encontrada nas últimas horas. 😴"
+    for url in FEEDS:
+        print(f"A ler: {url}")
+        feed = feedparser.parse(url)
+        for entry in feed.entries[:3]: # 3 de cada fonte
+            if entry.link not in history:
+                message_blocks.append(f"• *{entry.title}*\n<{entry.link}|Ler artigo>")
+                new_links.append(entry.link)
 
-    message = "*🚀 Top Daily AI News for Devs:*\n\n"
-    
-    # Vamos buscar as 5 melhores
-    for entry in feed.entries[:5]:
-        message += f"• *{entry.title}*\n<{entry.link}|Ler artigo>\n\n"
-    
-    return message
+    if not message_blocks:
+        return None, []
+
+    final_message = "*🚀 Top Daily AI News for Devs:*\n\n" + "\n\n".join(message_blocks[:8])
+    return final_message, new_links
 
 def send_to_slack(text):
-    if not SLACK_WEBHOOK:
-        print("ERRO: O Secret SLACK_WEBHOOK_URL não foi encontrado!")
-        return
-
-    payload = {"text": text}
-    response = requests.post(SLACK_WEBHOOK, json=payload)
-    
-    if response.status_code == 200:
-        print("Enviado para o Slack com sucesso!")
-    else:
-        print(f"Erro no Slack: {response.status_code} - {response.text}")
+    requests.post(SLACK_WEBHOOK, json={"text": text})
 
 if __name__ == "__main__":
-    content = get_latest_news()
-    send_to_slack(content)
+    content, links = get_latest_news()
+    if content:
+        send_to_slack(content)
+        save_history(links)
+        print(f"Enviadas {len(links)} notícias novas.")
+    else:
+        print("Sem notícias novas hoje.")
