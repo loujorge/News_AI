@@ -1,23 +1,23 @@
 name: Daily AI News
 on:
   schedule:
-    - cron: '0 9 * * *' # Todos os dias às 09:00 UTC
-  workflow_dispatch: # Permite correr manualmente para testar
+    - cron: '0 9 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Atualizado de v3 para v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Atualizado de v4 para v5
         with:
-          python-version: '3.9'
+          python-version: '3.11' # Versão mais estável em 2026
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install feedparser requests
 
       - name: Run script
         env:
