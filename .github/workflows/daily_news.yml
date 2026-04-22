@@ -1,33 +1,51 @@
-name: Daily AI News
+name: Deploy AI Portal and Notify Slack
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 9 * * *' # 9h UTC (10h em PT)
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # Atualizado de v3 para v4
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # Atualizado de v4 para v5
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # Versão mais estável em 2026
+          python-version: '3.11'
 
       - name: Install dependencies
         run: pip install feedparser requests
 
       - name: Run script
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python news_bot.py
 
-      - name: Commit and push if history changed
+      - name: Upload HTML to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Send Slack Notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          git config --global user.name "AI News Bot"
-          git config --global user.email "bot@github.com"
-          git add sent_news.txt || true
-          git commit -m "Update news history" || true
-          git push || true
+          # Ler o conteúdo gerado pelo Python
+          MESSAGE=$(cat slack_payload.txt)
+          PAGE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          
+          # Enviar JSON formatado para o Slack
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"$MESSAGE \n\n 📄 *Resumo em HTML:* $PAGE_URL\"
+          }" $SLACK_WEBHOOK_URL
