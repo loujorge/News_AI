@@ -4,6 +4,7 @@ from datetime import datetime
 
 # Fontes de elite - Adicionei mais 3 de peso
 FEEDS = {
+    "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
     "OpenAI": "https://openai.com/news/rss.xml",
     "DeepMind": "https://deepmind.google/blog/rss.xml",
     "TechCrunch AI": "https://techcrunch.com/category/artificial-intelligence/feed/",
