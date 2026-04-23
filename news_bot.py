@@ -9,7 +9,6 @@ FEEDS = {
     "DeepMind": "https://deepmind.google/blog/rss.xml",
     "TechCrunch AI": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "The Verge": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml",
-    "MIT Tech Review": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
     "Wired AI": "https://www.wired.com/feed/category/ai/latest/rss"
 }
 
