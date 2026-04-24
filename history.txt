@@ -40,3 +40,13 @@ https://techcrunch.com/2026/04/23/ai-galaxy-hunters-are-adding-to-the-global-gpu
 https://www.technologyreview.com/2026/04/21/1135654/agent-orchestration-ai-artificial-intelligence/
 https://www.technologyreview.com/2026/04/21/1135656/humanoid-data-robot-training-ai-artificial-intelligence/
 https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/
+https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are
+https://openai.com/index/introducing-gpt-5-5
+https://openai.com/index/gpt-5-5-system-card
+https://openai.com/academy/codex-automations
+https://deepmind.google/blog/10-years-of-alphago/
+https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/
+https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/
+https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/
+https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/
+https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
