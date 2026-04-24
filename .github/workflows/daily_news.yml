@@ -1,7 +1,7 @@
 name: Deploy AI Portal and Notify Slack
 on:
   schedule:
-   - cron: '10 08 * * *'
+   - cron: '23 08 * * *'
   workflow_dispatch:
 
 permissions:
