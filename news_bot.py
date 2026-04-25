@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import feedparser
 import os
 from datetime import datetime, timezone, timedelta
@@ -17,12 +18,12 @@ MAX_AGE_HOURS = 48
 
 def get_history():
     if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "r") as f:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
             return set(f.read().splitlines())
     return set()
 
 def save_history(new_links):
-    with open(HISTORY_FILE, "a") as f:
+    with open(HISTORY_FILE, "a", encoding="utf-8") as f:
         for link in new_links:
             f.write(link + "\n")
 
@@ -41,7 +42,7 @@ def is_recent(entry):
     """Retorna True se o artigo foi publicado nas últimas MAX_AGE_HOURS horas."""
     pub_date = parse_entry_date(entry)
     if pub_date is None:
-        return True  # sem data, deixa passar
+        return True  # sem data, deixa passar por segurança
     cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_HOURS)
     return pub_date >= cutoff
 
@@ -80,12 +81,12 @@ def get_data():
 
 def source_color(source):
     colors = {
-        "OpenAI":       ("#10a37f", "#d4f5ec"),
-        "DeepMind":     ("#4285f4", "#dbeafe"),
+        "OpenAI":        ("#10a37f", "#d4f5ec"),
+        "DeepMind":      ("#4285f4", "#dbeafe"),
         "VentureBeat AI": ("#e85d04", "#fff0e0"),
         "TechCrunch AI":  ("#ff5500", "#ffede5"),
-        "The Verge":    ("#ff3b5c", "#ffe0e6"),
-        "Wired AI":     ("#b5179e", "#f5d6f7"),
+        "The Verge":     ("#ff3b5c", "#ffe0e6"),
+        "Wired AI":      ("#b5179e", "#f5d6f7"),
     }
     return colors.get(source, ("#555", "#eee"))
 
@@ -117,6 +118,14 @@ def generate_html(articles):
             fg, bg = source_color(art["source"])
             sources_legend += f'<span class="legend-dot" style="background:{fg};"></span><span class="legend-name">{art["source"]}</span>'
             seen.append(art["source"])
+
+    # Tratamento do Empty State para evitar erro de encoding com emojis
+    content_html = f"<div class='grid'>{cards_html}</div>" if articles else f"""
+    <div class="empty">
+        <h2>Sem notícias novas</h2>
+        <p>Nenhum artigo novo nas últimas 48 horas. Estão todos a treinar modelos! \U0001F634</p>
+    </div>
+    """
 
     template = f"""<!DOCTYPE html>
 <html lang="pt">
@@ -161,7 +170,6 @@ def generate_html(articles):
             padding: 0 0 5rem;
         }}
 
-        /* ── HEADER ── */
         .site-header {{
             border-bottom: 1px solid var(--border);
             padding: 2.5rem 0 2rem;
@@ -227,7 +235,6 @@ def generate_html(articles):
             color: var(--muted);
         }}
 
-        /* ── SOURCES BAR ── */
         .sources-bar {{
             max-width: 1080px;
             margin: 0 auto 2.5rem;
@@ -260,7 +267,6 @@ def generate_html(articles):
             color: var(--muted);
         }}
 
-        /* ── GRID ── */
         .grid {{
             max-width: 1080px;
             margin: auto;
@@ -270,7 +276,6 @@ def generate_html(articles):
             gap: 1.25rem;
         }}
 
-        /* ── CARD ── */
         .card {{
             background: var(--surface);
             border: 1px solid var(--border);
@@ -353,7 +358,6 @@ def generate_html(articles):
             border-color: var(--text);
         }}
 
-        /* ── EMPTY STATE ── */
         .empty {{
             max-width: 480px;
             margin: 6rem auto;
@@ -368,7 +372,6 @@ def generate_html(articles):
             margin-bottom: 0.5rem;
         }}
 
-        /* ── FOOTER ── */
         footer {{
             max-width: 1080px;
             margin: 4rem auto 0;
@@ -410,12 +413,7 @@ def generate_html(articles):
     {sources_legend}
 </div>
 
-{"<div class='grid'>" + cards_html + "</div>" if articles else """
-<div class="empty">
-    <h2>Sem notícias novas</h2>
-    <p>Nenhum artigo novo nas últimas 48 horas. Estão todos a treinar modelos! 😴</p>
-</div>
-"""}
+{content_html}
 
 <footer>
     <span>AI Intelligence Report · Gerado automaticamente</span>
@@ -439,5 +437,5 @@ if __name__ == "__main__":
     else:
         generate_html([])
         with open("slack_payload.txt", "w", encoding="utf-8") as f:
-            f.write("Sem notícias novas nas últimas 48h. Estão todos a treinar modelos! 😴")
+            f.write("Sem notícias novas nas últimas 48h. Estão todos a treinar modelos!")
         print("ℹ️  Sem artigos novos.")
