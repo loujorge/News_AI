@@ -50,3 +50,6 @@ https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-light
 https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/
 https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/
 https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
+https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/
+https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/
+https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/
