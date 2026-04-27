@@ -1,2 +1,6 @@
 feedparser
 requests
+pandas
+lxml
+beautifulsoup4
+tzdata
