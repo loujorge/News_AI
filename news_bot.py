@@ -292,7 +292,7 @@ def generate_html(general_news, tech_news, arena_leaders):
     if not general_news and not tech_news and not arena_leaders:
         content = '<div class="empty"><h2>Tudo calmo por agora...</h2><p>Estão todos a treinar modelos! 😴</p></div>'
     else:
-        content = arena_html + general_html + tech_html
+        content = general_html + tech_html + arena_html
 
     template = f"""<!DOCTYPE html>
 <html lang="pt">
