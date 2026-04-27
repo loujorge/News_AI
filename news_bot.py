@@ -121,6 +121,7 @@ HARDCODED_DICT = {
     "gemini-3.1-pro-preview": 'Gemini 3.1 Pro (Preview)',
     "gpt-5.2-chat-latest-20260210": 'GPT-5.2',
     "Anthropicclaude-opus-4-7": 'Claude Opus 4.7',
+    "Anthropicclaude-opus-4-7-thinking": 'Claude Opus 4.7',
 }
 
 
