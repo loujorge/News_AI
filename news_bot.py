@@ -1,7 +1,20 @@
 # -*- coding: utf-8 -*-
+"""
+News Bot
+--------
+Recolhe notícias de RSS feeds + leaderboard do arena.ai e produz:
+  • index.html         — relatório visual (igual ao original)
+  • slack_payload.txt  — payload para o canal de Slack (igual ao original)
+  • news_payload.json  — NOVO: payload estruturado para a aplicação News Feed
+
+Opcionalmente, se a variável de ambiente NEWS_API_ENDPOINT estiver definida,
+faz POST do JSON para a API interna.
+"""
 import feedparser
 import io
+import json
 import os
+import re
 import requests
 import pandas as pd
 from datetime import datetime, timezone, timedelta
@@ -23,7 +36,21 @@ FEEDS_TECH = {
 }
 
 HISTORY_FILE = "history.txt"
+JSON_OUTPUT = "news_payload.json"
 MAX_AGE_HOURS = 48
+SUMMARY_MAX_CHARS = 280  # tamanho do resumo guardado no JSON
+
+# Mapeamento fonte -> categoria do News Feed (AI / TECH / DESIGN / FINANCE / HR)
+SOURCE_CATEGORY = {
+    "The Rundown AI": "AI",
+    "Ben's Bites":    "AI",
+    "OpenAI":         "AI",
+    "DeepMind":       "AI",
+    "VentureBeat AI": "AI",
+    "TechCrunch AI":  "TECH",
+    "The Verge":      "TECH",
+    "Wired AI":       "TECH",
+}
 
 ARENA_URL = "https://arena.ai/leaderboard"
 ARENA_HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -155,6 +182,16 @@ def is_recent(entry):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_HOURS)
     return pub_date >= cutoff
 
+def clean_summary(raw, limit=SUMMARY_MAX_CHARS):
+    """Limpa tags HTML e trunca o resumo (versão para o JSON)."""
+    if not raw:
+        return ""
+    text = re.sub(r"<[^>]+>", "", raw)
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > limit:
+        text = text[: limit - 1].rstrip() + "…"
+    return text
+
 def fetch_category(feed_dict, history):
     articles = []
     links_to_save = []
@@ -166,12 +203,17 @@ def fetch_category(feed_dict, history):
                 continue
             pub_date = parse_entry_date(entry)
             pub_str = pub_date.strftime("%d %b, %H:%M") if pub_date else "Recent"
+            raw_summary = entry.get("summary", "Update disponível.")
             articles.append({
                 "source": source,
                 "title": entry.title,
                 "link": entry.link,
-                "summary": entry.get("summary", "Update disponível.")[:180] + "...",
-                "date": pub_str
+                # campo "summary" curto (estilo cartão) — usado no HTML/Slack
+                "summary": raw_summary[:180] + "...",
+                # campo "summary_clean" sem HTML, para o JSON da aplicação
+                "summary_clean": clean_summary(raw_summary),
+                "date": pub_str,
+                "published_at": pub_date.isoformat() if pub_date else None,
             })
             links_to_save.append(entry.link)
             count += 1
@@ -377,6 +419,52 @@ def build_slack_text(general_news, tech_news, arena_leaders):
     return "\n".join(lines)
 
 
+# ── JSON PAYLOAD (NOVO) ───────────────────────────────────────────────────────
+
+def build_json_payload(general_news, tech_news):
+    """Estrutura entregue à API do News Feed da aplicação."""
+    all_articles = []
+    for art in general_news + tech_news:
+        all_articles.append({
+            "title": art["title"].strip(),
+            "url": art["link"],
+            "summary": art["summary_clean"],
+            "source": art["source"],
+            "category": SOURCE_CATEGORY.get(art["source"], "AI"),
+            "publishedAt": art["published_at"],
+        })
+
+    return {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "timezone": "Europe/Lisbon",
+        "count": len(all_articles),
+        "articles": all_articles,
+    }
+
+def save_json(payload, path=JSON_OUTPUT):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+def post_to_api(payload):
+    """Envia o payload para o endpoint da API interna se estiver configurado."""
+    endpoint = os.getenv("NEWS_API_ENDPOINT")
+    if not endpoint:
+        return None
+
+    headers = {"Content-Type": "application/json"}
+    token = os.getenv("NEWS_API_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    try:
+        r = requests.post(endpoint, json=payload, headers=headers, timeout=30)
+        r.raise_for_status()
+        return r.status_code
+    except Exception as e:
+        print(f"⚠️  Falha ao enviar para a API: {e}")
+        return None
+
+
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
@@ -386,11 +474,28 @@ if __name__ == "__main__":
     tech_articles, tech_links = fetch_category(FEEDS_TECH, history)
     arena_leaders = fetch_arena_leaders()
 
+    # 1) HTML (igual ao original)
     generate_html(gen_articles, tech_articles, arena_leaders)
-    save_history(gen_links + tech_links)
 
+    # 2) Slack (igual ao original)
     slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders)
     with open("slack_payload.txt", "w", encoding="utf-8") as f:
         f.write(slack_text)
 
-    print(f"✅ Report gerado: {len(gen_articles)} generalistas, {len(tech_articles)} técnicas, {len(arena_leaders)} categorias Arena.")
+    # 3) JSON para a aplicação (NOVO)
+    json_payload = build_json_payload(gen_articles, tech_articles)
+    save_json(json_payload)
+
+    # 4) POST opcional para a API interna (NOVO)
+    status = post_to_api(json_payload)
+    if status:
+        print(f"✅ Payload enviado para API (HTTP {status}).")
+
+    # 5) Histórico
+    save_history(gen_links + tech_links)
+
+    print(
+        f"✅ Report gerado: {len(gen_articles)} generalistas, "
+        f"{len(tech_articles)} técnicas, {len(arena_leaders)} categorias Arena. "
+        f"JSON com {json_payload['count']} artigos."
+    )
