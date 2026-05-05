@@ -40,16 +40,25 @@ JSON_OUTPUT = "news_payload.json"
 MAX_AGE_HOURS = 48
 SUMMARY_MAX_CHARS = 280  # tamanho do resumo guardado no JSON
 
-# Mapeamento fonte -> categoria do News Feed (AI / TECH / DESIGN / FINANCE / HR)
+# IDs das categorias do News Feed (alinhado com a BD)
+CATEGORY_IDS = {
+    "AI":      1,
+    "DESIGN":  2,
+    "FINANCE": 3,
+    "HR":      4,
+    "TECH":    5,
+}
+
+# Mapeamento fonte -> ID da categoria
 SOURCE_CATEGORY = {
-    "The Rundown AI": "AI",
-    "Ben's Bites":    "AI",
-    "OpenAI":         "AI",
-    "DeepMind":       "AI",
-    "VentureBeat AI": "AI",
-    "TechCrunch AI":  "TECH",
-    "The Verge":      "TECH",
-    "Wired AI":       "TECH",
+    "The Rundown AI": CATEGORY_IDS["AI"],
+    "Ben's Bites":    CATEGORY_IDS["AI"],
+    "OpenAI":         CATEGORY_IDS["AI"],
+    "DeepMind":       CATEGORY_IDS["AI"],
+    "VentureBeat AI": CATEGORY_IDS["AI"],
+    "TechCrunch AI":  CATEGORY_IDS["TECH"],
+    "The Verge":      CATEGORY_IDS["TECH"],
+    "Wired AI":       CATEGORY_IDS["TECH"],
 }
 
 ARENA_URL = "https://arena.ai/leaderboard"
@@ -430,7 +439,7 @@ def build_json_payload(general_news, tech_news):
             "url": art["link"],
             "summary": art["summary_clean"],
             "source": art["source"],
-            "category": SOURCE_CATEGORY.get(art["source"], "AI"),
+            "categoryId": SOURCE_CATEGORY.get(art["source"], CATEGORY_IDS["AI"]),
             "publishedAt": art["published_at"],
         })
 
