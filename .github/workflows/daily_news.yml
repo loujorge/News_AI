@@ -1,11 +1,12 @@
 name: Deploy AI Portal and Notify Slack
+
 on:
   schedule:
-   - cron: '23 08 * * *'
+    - cron: '23 08 * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write # Necessário para guardar o histórico
+  contents: write   # Necessário para guardar o histórico
   pages: write
   id-token: write
 
@@ -25,6 +26,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run script
+        env:
+          NEWS_API_ENDPOINT: ${{ secrets.NEWS_API_ENDPOINT }}
+          NEWS_API_TOKEN: ${{ secrets.NEWS_API_TOKEN }}
         run: python news_bot.py
 
       - name: Save history to repo
@@ -51,4 +55,4 @@ jobs:
           MESSAGE=$(cat slack_payload.txt)
           PAGE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
           curl -X POST -H 'Content-type: application/json' \
-          --data "{\"text\": \"$MESSAGE \n\n 📄 *Full Visual Report:* $PAGE_URL\"}" $SLACK_WEBHOOK_URL
+            --data "{\"text\": \"$MESSAGE \n\n 📄 *Full Visual Report:* $PAGE_URL\"}" $SLACK_WEBHOOK_URL
