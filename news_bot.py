@@ -32,7 +32,8 @@ FEEDS_TECH = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
     "TechCrunch AI": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "The Verge": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml",
-    "Wired AI": "https://www.wired.com/feed/category/ai/latest/rss"
+    "Wired AI": "https://www.wired.com/feed/category/ai/latest/rss",
+    "Alpha Signal": "https://alphasignalai.substack.com/feed",
 }
 
 HISTORY_FILE = "history.txt"
@@ -59,6 +60,7 @@ SOURCE_CATEGORY = {
     "TechCrunch AI":  CATEGORY_IDS["TECH"],
     "The Verge":      CATEGORY_IDS["TECH"],
     "Wired AI":       CATEGORY_IDS["TECH"],
+    "Alpha Signal":   CATEGORY_IDS["AI"],
 }
 
 ARENA_URL = "https://arena.ai/leaderboard"
@@ -278,6 +280,7 @@ def source_color(source):
         "TechCrunch AI":  ("#ff5500", "#ffede5"),
         "The Verge":      ("#ff3b5c", "#ffe0e6"),
         "Wired AI":       ("#b5179e", "#f5d6f7"),
+        "Alpha Signal":   ("#6c3bff", "#ece5ff"),
     }
     return colors.get(source, ("#555", "#eee"))
 
