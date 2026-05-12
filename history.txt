@@ -134,3 +134,8 @@ https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai
 https://techcrunch.com/2026/05/10/get-ready-for-the-whisper-filled-office-of-the-future/
 https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/
 https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/
+https://openai.com/signals/research/2026q1-update
+https://openai.com/index/openai-launches-the-deployment-company
+https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/
+https://techcrunch.com/2026/05/11/riding-an-ai-rally-robinhood-preps-second-retail-venture-ipo/
+https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/
