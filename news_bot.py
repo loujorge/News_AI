@@ -32,8 +32,7 @@ FEEDS_TECH = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
     "TechCrunch AI": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "The Verge": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml",
-    "Wired AI": "https://www.wired.com/feed/category/ai/latest/rss",
-    "Alpha Signal": "https://alphasignalai.substack.com/feed",
+    "Wired AI": "https://www.wired.com/feed/category/ai/latest/rss"
 }
 
 HISTORY_FILE = "history.txt"
@@ -44,10 +43,10 @@ SUMMARY_MAX_CHARS = 280  # tamanho do resumo guardado no JSON
 # IDs das categorias do News Feed (alinhado com a BD)
 CATEGORY_IDS = {
     "AI":      1,
-    "DESIGN":  2,
-    "FINANCE": 3,
-    "HR":      4,
-    "TECH":    5,
+    "TECH":    2,
+    "DESIGN":  3,
+    "FINANCE": 4,
+    "HR":      5,
 }
 
 # Mapeamento fonte -> ID da categoria
@@ -60,7 +59,6 @@ SOURCE_CATEGORY = {
     "TechCrunch AI":  CATEGORY_IDS["TECH"],
     "The Verge":      CATEGORY_IDS["TECH"],
     "Wired AI":       CATEGORY_IDS["TECH"],
-    "Alpha Signal":   CATEGORY_IDS["AI"],
 }
 
 ARENA_URL = "https://arena.ai/leaderboard"
@@ -280,7 +278,6 @@ def source_color(source):
         "TechCrunch AI":  ("#ff5500", "#ffede5"),
         "The Verge":      ("#ff3b5c", "#ffe0e6"),
         "Wired AI":       ("#b5179e", "#f5d6f7"),
-        "Alpha Signal":   ("#6c3bff", "#ece5ff"),
     }
     return colors.get(source, ("#555", "#eee"))
 
@@ -458,7 +455,10 @@ def save_json(payload, path=JSON_OUTPUT):
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 def post_to_api(payload):
-    """Envia o payload para o endpoint da API interna se estiver configurado."""
+    """Envia o payload para o endpoint da API interna se estiver configurado.
+    O endpoint /NewsFeed/SetNewsFeed espera um array de artigos (não o envelope completo).
+    O campo 'id' vai a 0 — a BD gera o ID real automaticamente (IDENTITY).
+    """
     endpoint = os.getenv("NEWS_API_ENDPOINT")
     if not endpoint:
         return None
@@ -468,8 +468,22 @@ def post_to_api(payload):
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
+    # Transforma cada artigo no formato esperado pelo endpoint
+    articles_to_send = [
+        {
+            "id": 0,
+            "title": art["title"],
+            "url": art["url"],
+            "summary": art["summary"],
+            "source": art["source"],
+            "categoryId": art["categoryId"],
+            "publishedAt": art["publishedAt"],
+        }
+        for art in payload["articles"]
+    ]
+
     try:
-        r = requests.post(endpoint, json=payload, headers=headers, timeout=30)
+        r = requests.post(endpoint, json=articles_to_send, headers=headers, timeout=30)
         r.raise_for_status()
         return r.status_code
     except Exception as e:
