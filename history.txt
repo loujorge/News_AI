@@ -158,3 +158,9 @@ https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations
 https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/
 https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/
 https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/
+https://openai.com/academy/codex-for-work/how-sales-teams-use-codex
+https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex
+https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex
+https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/
+https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/
+https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/
