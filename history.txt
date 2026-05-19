@@ -171,3 +171,7 @@ https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-tak
 https://techcrunch.com/2026/05/18/south-koreas-letinar-is-building-the-optics-behind-ai-glasses/
 https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/
 https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/
+https://openai.com/index/dell-codex-enterprise-partnership
+https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/
+https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/
+https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/
