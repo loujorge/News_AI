@@ -27,8 +27,9 @@ jobs:
 
       - name: Run script
         env:
-          NEWS_API_ENDPOINT: ${{ secrets.NEWS_API_ENDPOINT }}
-          NEWS_API_TOKEN: ${{ secrets.NEWS_API_TOKEN }}
+          NEWS_API_BASE_URL: ${{ secrets.NEWS_API_BASE_URL }}
+          NEWS_API_USERNAME: ${{ secrets.NEWS_API_USERNAME }}
+          NEWS_API_PASSWORD: ${{ secrets.NEWS_API_PASSWORD }}
         run: python news_bot.py
 
       - name: Save history to repo
