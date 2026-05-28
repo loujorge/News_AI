@@ -209,3 +209,9 @@ https://www.bensbites.com/p/is-saas-dead
 https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/
 https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/
 https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/
+https://openai.com/index/cisco
+https://openai.com/index/building-self-improving-tax-agents-with-codex
+https://openai.com/index/election-safeguards-2026
+https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/
+https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/
+https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/
