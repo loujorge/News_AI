@@ -454,21 +454,42 @@ def save_json(payload, path=JSON_OUTPUT):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-def post_to_api(payload):
-    """Envia o payload para o endpoint da API interna se estiver configurado.
-    O endpoint /NewsFeed/SetNewsFeed espera um array de artigos (não o envelope completo).
-    O campo 'id' vai a 0 — a BD gera o ID real automaticamente (IDENTITY).
-    """
-    endpoint = os.getenv("NEWS_API_ENDPOINT")
-    if not endpoint:
+def get_bearer_token(base_url, username, password):
+    """Autentica na API e devolve o Bearer token."""
+    auth_url = f"{base_url}/Account/Authenticate"
+    try:
+        r = requests.post(auth_url, json={"username": username, "password": password}, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        # O token pode vir em campos diferentes dependendo da API
+        token = data.get("token") or data.get("accessToken") or data.get("access_token")
+        if not token:
+            print("⚠️  Autenticação falhou: campo token não encontrado na resposta.")
+            return None
+        return token
+    except Exception as e:
+        print(f"⚠️  Falha na autenticação: {e}")
         return None
 
-    headers = {"Content-Type": "application/json"}
-    token = os.getenv("NEWS_API_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
 
-    # Transforma cada artigo no formato esperado pelo endpoint
+def post_to_api(payload):
+    """Autentica na API e envia o array de artigos para /NewsFeed/SetNewsFeed."""
+    base_url  = os.getenv("NEWS_API_BASE_URL")
+    username  = os.getenv("NEWS_API_USERNAME")
+    password  = os.getenv("NEWS_API_PASSWORD")
+
+    if not base_url or not username or not password:
+        return None
+
+    token = get_bearer_token(base_url, username, password)
+    if not token:
+        return None
+
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {token}",
+    }
+
     articles_to_send = [
         {
             "id": 0,
@@ -483,7 +504,7 @@ def post_to_api(payload):
     ]
 
     try:
-        r = requests.post(endpoint, json=articles_to_send, headers=headers, timeout=30)
+        r = requests.post(f"{base_url}/NewsFeed/SetNewsFeed", json=articles_to_send, headers=headers, timeout=30)
         r.raise_for_status()
         return r.status_code
     except Exception as e:
