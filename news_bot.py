@@ -455,16 +455,20 @@ def save_json(payload, path=JSON_OUTPUT):
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 def get_bearer_token(base_url, username, password):
-    """Autentica na API e devolve o Bearer token."""
-    auth_url = f"{base_url}/Account/Authenticate"
+    """Autentica via POST /Account/GetTokenForCredentials e devolve o Bearer token.
+    A API devolve o token directamente como text/plain (não JSON).
+    """
+    auth_url = f"{base_url}/Account/GetTokenForCredentials"
     try:
-        r = requests.post(auth_url, json={"username": username, "password": password}, timeout=30)
+        r = requests.post(
+            auth_url,
+            json={"username": username, "password": password},
+            timeout=30
+        )
         r.raise_for_status()
-        data = r.json()
-        # O token pode vir em campos diferentes dependendo da API
-        token = data.get("token") or data.get("accessToken") or data.get("access_token")
+        token = r.text.strip()
         if not token:
-            print("⚠️  Autenticação falhou: campo token não encontrado na resposta.")
+            print("⚠️  Autenticação falhou: resposta vazia.")
             return None
         return token
     except Exception as e:
