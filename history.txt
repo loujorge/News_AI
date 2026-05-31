@@ -228,3 +228,6 @@ https://openai.com/index/trustworthy-third-party-evaluations-foundations
 https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/
 https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
 https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/
+https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/
+https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/
+https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
