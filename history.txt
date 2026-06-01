@@ -231,3 +231,6 @@ https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/
 https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/
 https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/
 https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
+https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/
+https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/
+https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/
