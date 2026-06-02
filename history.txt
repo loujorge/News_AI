@@ -234,3 +234,9 @@ https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
 https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/
 https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/
 https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/
+https://openai.com/index/codex-for-knowledge-work
+https://openai.com/index/our-views-on-ai-policy-and-political-advocacy
+https://openai.com/index/stargate-michigan-data-center
+https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/
+https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/
+https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/
