@@ -17,6 +17,7 @@ import os
 import re
 import requests
 import pandas as pd
+from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 
@@ -54,6 +55,7 @@ SOURCE_CATEGORY = {
     "The Rundown AI": CATEGORY_IDS["AI"],
     "Ben's Bites":    CATEGORY_IDS["AI"],
     "OpenAI":         CATEGORY_IDS["AI"],
+    "Anthropic":      CATEGORY_IDS["AI"],
     "DeepMind":       CATEGORY_IDS["AI"],
     "VentureBeat AI": CATEGORY_IDS["AI"],
     "TechCrunch AI":  CATEGORY_IDS["TECH"],
@@ -229,6 +231,98 @@ def fetch_category(feed_dict, history):
     return articles, links_to_save
 
 
+# ── ANTHROPIC SCRAPER ─────────────────────────────────────────────────────────
+# A Anthropic não disponibiliza RSS oficial — raspamos a página de notícias
+# diretamente e adaptamos ao mesmo formato que fetch_category() devolve.
+
+def fetch_anthropic_news(history, max_articles=3):
+    """
+    Raspa https://www.anthropic.com/news e devolve
+    (articles, links_to_save) no formato padrão do pipeline.
+    """
+    try:
+        r = requests.get(
+            "https://www.anthropic.com/news",
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=30,
+        )
+        r.raise_for_status()
+    except Exception as e:
+        print(f"⚠️  Anthropic scrape failed: {e}")
+        return [], []
+
+    soup = BeautifulSoup(r.text, "lxml")
+    articles = []
+    links_to_save = []
+    seen_links = set()
+    count = 0
+
+    # Cada artigo é um <a href="/news/slug"> que contém data + título
+    for a in soup.select('a[href^="/news/"]'):
+        if count >= max_articles:
+            break
+
+        href = a.get("href", "")
+        # Ignora a própria listagem e âncoras internas
+        if href.rstrip("/") == "/news" or "#" in href:
+            continue
+
+        link = f"https://www.anthropic.com{href}"
+        if link in history or link in seen_links:
+            continue
+        seen_links.add(link)
+
+        # Título: primeiro bloco de texto com substância
+        raw_texts = [t.strip() for t in a.stripped_strings]
+        # Filtra fragmentos de data/categoria curtos e pega o mais longo
+        title_candidates = [t for t in raw_texts if len(t) > 20]
+        if not title_candidates:
+            continue
+        title = max(title_candidates, key=len)
+
+        # Data: procura padrão "Mon DD, YYYY" ou "Mon YYYY" nos textos do bloco
+        date_str = "Recent"
+        pub_date = None
+        date_pattern = re.compile(
+            r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b[\s\d,]+"
+        )
+        for text in raw_texts:
+            m = date_pattern.search(text)
+            if m:
+                date_str = text.strip()[:20]
+                for fmt in ("%b %d, %Y", "%b %Y"):
+                    try:
+                        pub_date = datetime.strptime(date_str.strip(), fmt).replace(
+                            tzinfo=timezone.utc
+                        )
+                        break
+                    except ValueError:
+                        pass
+                break
+
+        # Filtra artigos fora da janela de 48 h
+        if pub_date:
+            cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_HOURS)
+            if pub_date < cutoff:
+                continue
+
+        pub_str = pub_date.strftime("%d %b, %H:%M") if pub_date else date_str
+
+        articles.append({
+            "source": "Anthropic",
+            "title": title,
+            "link": link,
+            "summary": "",          # página de listagem não tem resumo
+            "summary_clean": "",
+            "date": pub_str,
+            "published_at": pub_date.isoformat() if pub_date else None,
+        })
+        links_to_save.append(link)
+        count += 1
+
+    return articles, links_to_save
+
+
 # ── ARENA AI HELPERS ─────────────────────────────────────────────────────────
 
 def fetch_arena_df():
@@ -273,6 +367,7 @@ def source_color(source):
         "The Rundown AI": ("#ffffff", "#000000"),
         "Ben's Bites":    ("#000000", "#ffdc00"),
         "OpenAI":         ("#10a37f", "#d4f5ec"),
+        "Anthropic":      ("#cc785c", "#f7ece8"),
         "DeepMind":       ("#4285f4", "#dbeafe"),
         "VentureBeat AI": ("#e85d04", "#fff0e0"),
         "TechCrunch AI":  ("#ff5500", "#ffede5"),
@@ -428,7 +523,7 @@ def build_slack_text(general_news, tech_news, arena_leaders):
     return "\n".join(lines)
 
 
-# ── JSON PAYLOAD (NOVO) ───────────────────────────────────────────────────────
+# ── JSON PAYLOAD ──────────────────────────────────────────────────────────────
 
 def build_json_payload(general_news, tech_news):
     """Estrutura entregue à API do News Feed da aplicação."""
@@ -455,9 +550,7 @@ def save_json(payload, path=JSON_OUTPUT):
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 def get_bearer_token(base_url, username, password):
-    """Autentica via POST /Account/GetTokenForCredentials e devolve o Bearer token.
-    A API devolve o token directamente como text/plain (não JSON).
-    """
+    """Autentica via POST /Account/GetTokenForCredentials e devolve o Bearer token."""
     auth_url = f"{base_url}/Account/GetTokenForCredentials"
     try:
         r = requests.post(
@@ -521,23 +614,26 @@ def post_to_api(payload):
 if __name__ == "__main__":
     history = get_history()
 
-    gen_articles, gen_links = fetch_category(FEEDS_GENERAL, history)
+    gen_articles,  gen_links  = fetch_category(FEEDS_GENERAL, history)
     tech_articles, tech_links = fetch_category(FEEDS_TECH, history)
-    arena_leaders = fetch_arena_leaders()
+    anth_articles, anth_links = fetch_anthropic_news(history)
+    tech_articles += anth_articles
+    tech_links    += anth_links
+    arena_leaders             = fetch_arena_leaders()
 
-    # 1) HTML (igual ao original)
+    # 1) HTML
     generate_html(gen_articles, tech_articles, arena_leaders)
 
-    # 2) Slack (igual ao original)
+    # 2) Slack
     slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders)
     with open("slack_payload.txt", "w", encoding="utf-8") as f:
         f.write(slack_text)
 
-    # 3) JSON para a aplicação (NOVO)
+    # 3) JSON para a aplicação
     json_payload = build_json_payload(gen_articles, tech_articles)
     save_json(json_payload)
 
-    # 4) POST opcional para a API interna (NOVO)
+    # 4) POST opcional para a API interna
     status = post_to_api(json_payload)
     if status:
         print(f"✅ Payload enviado para API (HTTP {status}).")
@@ -547,6 +643,7 @@ if __name__ == "__main__":
 
     print(
         f"✅ Report gerado: {len(gen_articles)} generalistas, "
-        f"{len(tech_articles)} técnicas, {len(arena_leaders)} categorias Arena. "
+        f"{len(tech_articles)} técnicas (incl. {len(anth_articles)} Anthropic), "
+        f"{len(arena_leaders)} categorias Arena. "
         f"JSON com {json_payload['count']} artigos."
     )
