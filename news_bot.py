@@ -160,10 +160,25 @@ HARDCODED_DICT = {
     "gpt-5.2-chat-latest-20260210": 'GPT-5.2',
     "Anthropicclaude-opus-4-7": 'Claude Opus 4.7',
     "Anthropicclaude-opus-4-7-thinking": 'Claude Opus 4.7',
+    "Anthropicclaude-fable-5": 'Claude Fable 5',
+    "gemini-3.5-flash": 'Gemini 3.5 Flash',
 }
 
 
 # ── NEWS HELPERS ──────────────────────────────────────────────────────────────
+
+def clean_history(max_entries=500):
+    """Mantém apenas as últimas N entradas no histórico.
+    Seguro porque MAX_AGE_HOURS=48 garante que links expirados do histórico
+    nunca passariam o filtro de recência de qualquer forma.
+    """
+    if not os.path.exists(HISTORY_FILE):
+        return
+    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+        lines = [l for l in f.read().splitlines() if l.strip()]
+    if len(lines) > max_entries:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines[-max_entries:]) + "\n")
 
 def get_history():
     if os.path.exists(HISTORY_FILE):
@@ -612,6 +627,7 @@ def post_to_api(payload):
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
+    clean_history()
     history = get_history()
 
     gen_articles,  gen_links  = fetch_category(FEEDS_GENERAL, history)
