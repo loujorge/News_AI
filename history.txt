@@ -378,3 +378,6 @@ https://openai.com/index/mapping-ai-jobs-transition-eu
 https://openai.com/index/hp-frontier-partnership
 https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/
 https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/
+https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/
+https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/
+https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/
