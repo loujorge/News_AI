@@ -413,3 +413,9 @@ https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-
 https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/
 https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/
 https://www.anthropic.com/news/alberta-government-claude-cybersecurity
+https://www.bensbites.com/p/my-thoughts-on-fable
+https://openai.com/index/australian-payments-plus
+https://openai.com/index/mufg
+https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/
+https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/
+https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/
