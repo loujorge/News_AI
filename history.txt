@@ -1,9 +1,3 @@
-https://openai.com/index/making-chatgpt-better-for-clinicians
-https://openai.com/academy/workspace-agents
-https://openai.com/index/introducing-workspace-agents-in-chatgpt
-https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/
-https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/
-https://deepmind.google/blog/gemini-robotics-er-1-6/
 https://techcrunch.com/2026/04/22/indias-app-market-is-booming-but-global-platforms-are-capturing-most-of-the-gains/
 https://techcrunch.com/2026/04/22/tesla-just-increased-its-capex-to-25b-heres-where-the-money-is-going/
 https://techcrunch.com/2026/04/22/google-updates-workspace-to-make-ai-your-new-office-intern/
@@ -504,3 +498,8 @@ https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isn
 https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/
 https://www.anthropic.com/news/economic-futures-research-fund-agenda
 https://www.anthropic.com/news/anthropic-economic-index-connector
+https://www.bensbites.com/p/caught-cheating
+https://openai.com/index/health-in-chatgpt
+https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/
+https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/
+https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/
