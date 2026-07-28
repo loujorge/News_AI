@@ -162,6 +162,7 @@ HARDCODED_DICT = {
     "Anthropicclaude-opus-4-7-thinking": 'Claude Opus 4.7',
     "Anthropicclaude-fable-5": 'Claude Fable 5',
     "gemini-3.5-flash": 'Gemini 3.5 Flash',
+    "Anthropicclaude-opus-5-high": 'Claude Opus 5',
 }
 
 
