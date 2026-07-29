@@ -1,8 +1,3 @@
-https://techcrunch.com/2026/04/22/how-spacex-preempted-a-2b-fundraise-with-a-60b-buyout-offer/
-https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/
-https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/
-https://www.technologyreview.com/2026/04/21/1135650/world-models-ai-artificial-intelligence/
-https://www.technologyreview.com/2026/04/21/1135652/weaponized-deepfakes-ai-artificial-intelligence/
 https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and
 https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no
 https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in
@@ -503,3 +498,8 @@ https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose
 https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/
 https://www.anthropic.com/news/position-open-weights-models
 https://www.anthropic.com/news/cognizant-anthropic
+https://www.bensbites.com/p/opus-5-fable-5
+https://openai.com/index/scientific-computing-agentic-ai
+https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/
+https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight/
+https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/
