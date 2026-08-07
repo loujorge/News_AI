@@ -1,6 +1,3 @@
-https://openai.com/index/our-commitment-to-community-safety
-https://techcrunch.com/2026/04/29/coby-adcocks-scout-ai-raises-100-million-to-train-models-for-war-we-visited-its-bootcamp/
-https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/
 https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/
 https://openai.com/index/where-the-goblins-came-from
 https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age
@@ -501,3 +498,12 @@ https://www.anthropic.com/news/tino-cuellar
 https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/
 https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/
 https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/
+https://www.bensbites.com/p/im-using-a-new-agent-app
+https://openai.com/index/hsp-gruppe
+https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt
+https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai
+https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
+https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/
+https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/
+https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/
+https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
