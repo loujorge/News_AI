@@ -1,12 +1,3 @@
-https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/
-https://openai.com/index/where-the-goblins-came-from
-https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age
-https://openai.com/index/cybersecurity-in-the-intelligence-age
-https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/
-https://techcrunch.com/2026/04/29/amazons-cloud-business-is-surging-and-so-is-its-capital-spending/
-https://techcrunch.com/2026/04/29/sources-anthropic-could-raise-a-new-50b-round-at-a-valuation-of-900b/
-https://www.bensbites.com/p/building-gets-easier
-https://openai.com/index/advanced-account-security
 https://deepmind.google/blog/ai-co-clinician/
 https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/
 https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
@@ -507,3 +498,8 @@ https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-s
 https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/
 https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/
 https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
+https://www.bensbites.com/p/bens-session
+https://openai.com/index/responding-next-frontier-critical-cyber-capabilities
+https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/
+https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/
+https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/
