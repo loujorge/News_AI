@@ -1,8 +1,3 @@
-https://deepmind.google/blog/ai-co-clinician/
-https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/
-https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
-https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/
-https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/
 https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/
 https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you/
 https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
@@ -503,3 +498,6 @@ https://openai.com/index/responding-next-frontier-critical-cyber-capabilities
 https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/
 https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/
 https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/
+https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/
+https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/
+https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/
