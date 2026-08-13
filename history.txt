@@ -1,10 +1,3 @@
-https://www.bensbites.com/p/codex-is-gaining-steam
-https://openai.com/index/gpt-5-5-instant
-https://openai.com/index/gpt-5-5-instant-system-card
-https://openai.com/index/new-ways-to-buy-chatgpt-ads
-https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/
-https://techcrunch.com/2026/05/05/marc-lore-says-that-ai-will-soon-enable-anyone-open-a-restaurant/
-https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/
 https://openai.com/index/introducing-chatgpt-futures-class-of-2026
 https://openai.com/index/introducing-b2b-signals
 https://openai.com/index/uber
@@ -505,3 +498,9 @@ https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows
 https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/
 https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/
 https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/
+https://openai.com/index/how-enterprises-put-ai-to-work
+https://openai.com/index/ringcentral
+https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/
+https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/
+https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/
+https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/
