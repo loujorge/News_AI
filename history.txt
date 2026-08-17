@@ -1,6 +1,3 @@
-https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/
-https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
-https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/
 https://openai.com/index/openai-campus-network-student-club-interest-form
 https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai
 https://techcrunch.com/2026/05/10/get-ready-for-the-whisper-filled-office-of-the-future/
@@ -501,3 +498,6 @@ https://www.anthropic.com/news/claude-text-watermark
 https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/
 https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/
 https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/
+https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/
+https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/
+https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/
