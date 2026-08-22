@@ -1,10 +1,3 @@
-https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations
-https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/
-https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/
-https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/
-https://openai.com/academy/codex-for-work/how-sales-teams-use-codex
-https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex
-https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex
 https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/
 https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/
 https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/
@@ -505,3 +498,8 @@ https://openai.com/index/stampli
 https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/
 https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/
 https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/
+https://www.bensbites.com/p/how-i-built-this
+https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/
+https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/
+https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/
+https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/
