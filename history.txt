@@ -1,6 +1,3 @@
-https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/
-https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/
-https://techcrunch.com/2026/05/18/south-koreas-letinar-is-building-the-optics-behind-ai-glasses/
 https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/
 https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/
 https://openai.com/index/dell-codex-enterprise-partnership
@@ -501,3 +498,6 @@ https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai
 https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/
 https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/
 https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/
+https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/
+https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/
+https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/
