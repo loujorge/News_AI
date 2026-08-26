@@ -1,10 +1,3 @@
-https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/
-https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/
-https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/
-https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone
-https://openai.com/index/the-next-phase-of-education-for-countries
-https://openai.com/index/introducing-openai-for-singapore
-https://openai.com/index/advancing-content-provenance
 https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/
 https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think
 https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/
@@ -505,3 +498,12 @@ https://openai.com/index/gpt-5-6-in-kiro
 https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/
 https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/
 https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/
+https://www.therundown.ai/articles/the-spacex-nvidia-partnership-heads-for-orbit
+https://www.bensbites.com/p/agents-on-your-mobile
+https://openai.com/index/the-full-stack-behind-abundant-intelligence
+https://openai.com/index/jalapeno-first-results
+https://openai.com/index/introducing-admin-plugin
+https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/
+https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/
+https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/
+https://www.anthropic.com/news/wellbeing-research-grants
