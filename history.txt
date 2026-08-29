@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/
-https://www.bensbites.com/p/is-saas-dead
-https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/
-https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/
-https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/
-https://openai.com/index/cisco
-https://openai.com/index/building-self-improving-tax-agents-with-codex
-https://openai.com/index/election-safeguards-2026
 https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/
 https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/
 https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/
@@ -506,3 +498,8 @@ https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at
 https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/
 https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/
 https://www.anthropic.com/news/expanding-support-for-scientists
+https://www.therundown.ai/articles/inside-meta-s-18b-teen-crackdown
+https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex
+https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/
+https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/
+https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/
