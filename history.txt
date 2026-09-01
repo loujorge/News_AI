@@ -1,8 +1,3 @@
-https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/
-https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/
-https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/
-https://openai.com/index/boston-childrens-hospital
-https://openai.com/index/braintrust
 https://openai.com/index/trustworthy-third-party-evaluations-foundations
 https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/
 https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
@@ -503,3 +498,12 @@ https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads
 https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/
 https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/
 https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/
+https://www.therundown.ai/articles/runway-solaris-previews-the-no-code-internet
+https://www.therundown.ai/articles/hugging-face-robot-duck-is-already-a-hit
+https://www.bensbites.com/p/build-your-ideas
+https://openai.com/index/supporting-california-bill-advance-ai-youth-safety
+https://openai.com/index/polimill
+https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/
+https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/
+https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/
+https://www.anthropic.com/news/improving-alignment-security-efforts
