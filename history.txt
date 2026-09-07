@@ -1,7 +1,3 @@
-https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/
-https://techcrunch.com/2026/06/07/is-this-the-dawn-of-the-tokenpocalypse/
-https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropic-after-service-disruption/
-https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
 https://openai.com/index/openai-submits-confidential-s-1
 https://openai.com/index/built-to-benefit-everyone-our-plan
 https://openai.com/index/economic-research-exchange
@@ -502,3 +498,9 @@ https://www.therundown.ai/articles/apple-vision-pro-scrubs-into-surgery
 https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/
 https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/
 https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/
+https://www.therundown.ai/articles/another-openai-agent-swarm-surfaces
+https://openai.com/index/supporting-independent-journalism-in-ukraine
+https://openai.com/index/an-alien-mind
+https://openai.com/index/research-acceleration-view-inside-openai
+https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/
+https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/
