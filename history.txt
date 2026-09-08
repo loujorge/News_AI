@@ -1,9 +1,3 @@
-https://openai.com/index/openai-submits-confidential-s-1
-https://openai.com/index/built-to-benefit-everyone-our-plan
-https://openai.com/index/economic-research-exchange
-https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/
-https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/
-https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/
 https://www.bensbites.com/p/hey-siri-meet-ai
 https://openai.com/index/lseg
 https://openai.com/index/nextdoor
@@ -504,3 +498,6 @@ https://openai.com/index/an-alien-mind
 https://openai.com/index/research-acceleration-view-inside-openai
 https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/
 https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/
+https://www.therundown.ai/articles/inside-openai-agent-powered-research-boom
+https://www.therundown.ai/articles/a-catwalk-at-ifa-but-for-robots
+https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
