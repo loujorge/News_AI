@@ -1,6 +1,3 @@
-https://www.bensbites.com/p/hey-siri-meet-ai
-https://openai.com/index/lseg
-https://openai.com/index/nextdoor
 https://openai.com/index/notion
 https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/
 https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/
@@ -501,3 +498,13 @@ https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-t
 https://www.therundown.ai/articles/inside-openai-agent-powered-research-boom
 https://www.therundown.ai/articles/a-catwalk-at-ifa-but-for-robots
 https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
+https://www.therundown.ai/articles/openai-secret-model-settles-a-1m-math-problem
+https://www.therundown.ai/articles/apple-unfolds-its-decade-long-iphone
+https://www.bensbites.com/p/the-first-gpt-6-model
+https://openai.com/index/codex-quantum-computing-experiments
+https://openai.com/index/the-work-now-within-reach
+https://openai.com/index/introducing-chatgpt-images-2-5
+https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
+https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/
+https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/
+https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/
