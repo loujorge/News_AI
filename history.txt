@@ -1,13 +1,3 @@
-https://openai.com/index/notion
-https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/
-https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/
-https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/
-https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/
-https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/
-https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/
-https://openai.com/index/using-codex-to-simulate-black-holes
-https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem
-https://openai.com/index/openai-on-oracle-cloud
 https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/
 https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/
 https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/
@@ -508,3 +498,10 @@ https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possibl
 https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/
 https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/
 https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/
+https://www.therundown.ai/articles/an-anthropic-exit-becomes-an-extinction-debate
+https://openai.com/index/ai-policy-window
+https://openai.com/index/gpt-6-astra-next-generation-work
+https://openai.com/index/paul-christiano-joins-openai-foundation-board
+https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/
+https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/
+https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/
