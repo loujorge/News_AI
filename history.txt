@@ -1,10 +1,3 @@
-https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/
-https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/
-https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/
-https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/
-https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/
-https://www.bensbites.com/p/new-claude-model-fable
-https://openai.com/index/preply
 https://openai.com/index/openai-to-acquire-ona
 https://openai.com/index/bbva
 https://techcrunch.com/2026/06/11/cheaper-faster-and-culturally-aware-avataars-video-ai-is-built-for-indias-scale/
@@ -505,3 +498,12 @@ https://openai.com/index/paul-christiano-joins-openai-foundation-board
 https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/
 https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/
 https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/
+https://www.therundown.ai/articles/anthropic-opens-the-files-on-global-claude-misuse
+https://www.therundown.ai/articles/tesla-cybercab-is-already-getting-weird
+https://www.bensbites.com/p/everyone-needs-a-muse
+https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials
+https://openai.com/index/put-data-to-work
+https://openai.com/index/introducing-chatgpt-financial-services
+https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/
+https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/
+https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
