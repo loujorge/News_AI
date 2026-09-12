@@ -1,12 +1,3 @@
-https://openai.com/index/openai-to-acquire-ona
-https://openai.com/index/bbva
-https://techcrunch.com/2026/06/11/cheaper-faster-and-culturally-aware-avataars-video-ai-is-built-for-indias-scale/
-https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/
-https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/
-https://openai.com/index/academy-courses-applying-ai-at-work
-https://techcrunch.com/2026/06/12/andrew-yang-thinks-the-next-big-startup-opportunity-is-lowering-the-cost-of-living/
-https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/
-https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/
 https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/
 https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/
 https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/
@@ -507,3 +498,11 @@ https://openai.com/index/introducing-chatgpt-financial-services
 https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/
 https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/
 https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
+https://www.therundown.ai/articles/apple-turns-watch-into-ai-notetaker
+https://www.bensbites.com/p/telling-ai-to-design-is-hard
+https://openai.com/index/perplexity-improving-accuracy-with-astra
+https://openai.com/index/scaling-storage-one-billion-users-part-one
+https://openai.com/index/cognition-devin-testing-with-astra
+https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/
+https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/
+https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/
