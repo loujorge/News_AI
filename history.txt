@@ -1,10 +1,3 @@
-https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/
-https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation/
-https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/
-https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/
-https://openai.com/index/ai-chemist-improves-reaction
-https://openai.com/index/introducing-life-sci-bench
-https://techcrunch.com/2026/06/17/how-to-turn-off-ai-in-your-google-docs/
 https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/
 https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/
 https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem
@@ -505,3 +498,10 @@ https://openai.com/index/fyxer
 https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/
 https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/
 https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/
+https://www.therundown.ai/articles/chatgpt-co-creator-launches-a-new-kind-of-ai
+https://www.therundown.ai/articles/us-confirms-weapons-are-in-orbit
+https://openai.com/index/reimagining-advertising-with-ai
+https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/
+https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/
+https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/
+https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/
