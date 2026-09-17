@@ -1,10 +1,3 @@
-https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/
-https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/
-https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem
-https://www.bensbites.com/p/the-first-big-exit-in-ai
-https://openai.com/index/chatgpt-enterprise-spend-controls
-https://openai.com/index/improving-health-intelligence-in-chatgpt
-https://openai.com/index/diagnose-rare-childhood-diseases
 https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/
 https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/
 https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/
@@ -505,3 +498,11 @@ https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-t
 https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/
 https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/
 https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/
+https://www.therundown.ai/articles/zuck-sits-out-the-ai-slowdown
+https://www.bensbites.com/p/new-home-for-cowork
+https://openai.com/index/helping-older-adults-use-ai-in-everyday-life
+https://openai.com/index/how-to-connect-ai-usage-to-business-value
+https://openai.com/index/model-misalignment-reporting-framework
+https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/
+https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/
+https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/
