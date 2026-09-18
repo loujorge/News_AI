@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/
-https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/
-https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/
-https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/
-https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/
-https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/
-https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/
-https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/
 https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/
 https://openai.com/index/samsung-electronics-chatgpt-codex-deployment
 https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/
@@ -506,3 +498,11 @@ https://openai.com/index/model-misalignment-reporting-framework
 https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/
 https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/
 https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/
+https://www.therundown.ai/articles/inside-openai-log-of-misbehaving-models
+https://www.therundown.ai/articles/agility-new-safer-humanoid
+https://openai.com/index/cooley-gopublic
+https://openai.com/index/astra-for-law
+https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/
+https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/
+https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/
+https://www.anthropic.com/news/life-sciences-verification-program
