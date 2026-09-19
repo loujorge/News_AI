@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/
-https://openai.com/index/samsung-electronics-chatgpt-codex-deployment
-https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/
-https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/
-https://openai.com/index/omio
-https://openai.com/index/daybreak-securing-the-world
-https://openai.com/index/patch-the-planet
-https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/
 https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/
 https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/
 https://www.bensbites.com/p/record-a-skill
@@ -506,3 +498,9 @@ https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-cente
 https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/
 https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/
 https://www.anthropic.com/news/life-sciences-verification-program
+https://www.therundown.ai/articles/meta-less-creepy-smart-glasses
+https://openai.com/index/australian-youth-safety-blueprint
+https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/
+https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/
+https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/
+https://www.anthropic.com/news/accenture-embedded-evaluation
