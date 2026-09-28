@@ -63,8 +63,20 @@ SOURCE_CATEGORY = {
     "Wired AI":       CATEGORY_IDS["TECH"],
 }
 
-ARENA_URL = "https://arena.ai/leaderboard"
+ARENA_URL = "https://arena.ai/leaderboard/text"
 ARENA_HEADERS = {"User-Agent": "Mozilla/5.0"}
+
+# O arena.ai deixou de ter uma tabela-resumo; cada categoria tem agora a sua página.
+ARENA_CATEGORIES = {
+    "Overall": "",
+    "Expert": "expert",
+    "Hard Prompts": "hard-prompts",
+    "Coding": "coding",
+    "Math": "math",
+    "Creative Writing": "creative-writing",
+    "Instruction Following": "instruction-following",
+    "Longer Query": "longer-query",
+}
 
 HARDCODED_DICT = {
     "gemini-3-pro": 'Gemini 3 Pro (Preview)',
@@ -165,7 +177,9 @@ HARDCODED_DICT = {
     "Anthropicclaude-opus-5-high": 'Claude Opus 5',
     "Anthropicclaude-opus-4-6-high": 'Claude Opus 4.6',
     "Anthropicclaude-opus-4-7-high": 'Claude Opus 4.7',
-    "Anthropicclaude-opus-5-max": 'Claude Opus 5'
+    "Anthropicclaude-opus-5-max": 'Claude Opus 5',
+    "Anthropicclaude-fable-5-high": 'Claude Fable 5',
+    "Anthropicclaude-opus-5.5-high": 'Claude Opus 5.5'
 }
 
 
@@ -344,36 +358,52 @@ def fetch_anthropic_news(history, max_articles=3):
 
 # ── ARENA AI HELPERS ─────────────────────────────────────────────────────────
 
-def fetch_arena_df():
-    r = requests.get(ARENA_URL, headers=ARENA_HEADERS, timeout=30)
-    r.raise_for_status()
-    tables = pd.read_html(io.StringIO(r.text))
-    if not tables:
-        raise RuntimeError("No tables found on Arena leaderboard.")
-    expected_any = {"Model", "Overall"}
-    for t in tables:
-        if expected_any.issubset(set(map(str, t.columns))):
-            return t
-    return max(tables, key=lambda x: x.shape[1])
+def arena_model_key(cell):
+    # Reproduz o texto da célula do antigo read_html ("<título do logo da org><modelo>"),
+    # que é o formato das chaves do HARDCODED_DICT.
+    svg = cell.find("svg")
+    title = svg.find("title", recursive=False) if svg else None
+    org = title.get_text(strip=True) if title else ""
+    name_span = cell.find("span", attrs={"title": True})
+    if not name_span:
+        raise RuntimeError("Model name span not found in Arena row.")
+    return f"{org}{name_span['title'].strip()}"
 
-def compute_arena_rank1(df):
-    model_col = df.columns[0]
+def fetch_arena_rank1_key(slug):
+    url = f"{ARENA_URL}/{slug}" if slug else ARENA_URL
+    r = requests.get(url, headers=ARENA_HEADERS, timeout=30)
+    r.raise_for_status()
+    rows = BeautifulSoup(r.text, "lxml").select("table tbody tr")
+    # Slugs inválidos devolvem 200 na mesma, só que sem tabela.
+    if not rows:
+        raise RuntimeError(f"No leaderboard table at {url}.")
+    best_rank, best_key = None, None
+    for row in rows:
+        cells = row.find_all("td", recursive=False)
+        rank_text = cells[0].get_text(strip=True)
+        if not rank_text.isdigit():
+            continue
+        rank = int(rank_text)
+        if best_rank is None or rank < best_rank:
+            best_rank, best_key = rank, arena_model_key(cells[2])
+    if best_key is None:
+        raise RuntimeError(f"No ranked rows parsed at {url}.")
+    return best_key
+
+def compute_arena_rank1():
     results = []
-    for col in df.columns[1:]:
-        numeric_col = pd.to_numeric(df[col], errors="coerce").fillna(1e10)
-        best_idx = int(numeric_col.argsort()[:1][0])
-        model_name = str(df.iloc[best_idx][model_col])
+    for category, slug in ARENA_CATEGORIES.items():
+        model_name = fetch_arena_rank1_key(slug)
         mapped = HARDCODED_DICT.get(model_name)
         if isinstance(mapped, str):
             model_name = mapped
-        results.append({"category": str(col), "model": model_name})
+        results.append({"category": category, "model": model_name})
     return results
 
 def fetch_arena_leaders():
     """Returns list of {category, model} for rank-1 per category. Returns [] on failure."""
     try:
-        df = fetch_arena_df()
-        return compute_arena_rank1(df)
+        return compute_arena_rank1()
     except Exception as e:
         print(f"⚠️  Arena fetch failed: {e}")
         return []
