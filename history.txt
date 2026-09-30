@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/
-https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine/
-https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/
-https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/
-https://www.anthropic.com/news/alberta-government-claude-cybersecurity
-https://www.bensbites.com/p/my-thoughts-on-fable
-https://openai.com/index/australian-payments-plus
-https://openai.com/index/mufg
 https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/
 https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/
 https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/
@@ -506,3 +498,11 @@ https://openai.com/index/lenfest-ai-collaborative-expansion
 https://techcrunch.com/2026/09/29/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/
 https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/
 https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/
+https://www.therundown.ai/articles/openai-connects-the-dots-on-always-on-agents
+https://www.therundown.ai/articles/spacex-s-15b-megarocket-finally-delivers
+https://openai.com/index/introducing-gpt-6-1-sol
+https://openai.com/index/devday-2026-recap
+https://openai.com/index/introducing-dots
+https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/
+https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/
+https://techcrunch.com/2026/09/30/3-days-left-to-exhibit-at-techcrunch-disrupt-2026-2/
