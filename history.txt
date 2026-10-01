@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/
-https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/
-https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/
-https://openai.com/index/government-national-security-partnerships
-https://openai.com/index/separating-signal-from-noise-coding-evaluations
-https://openai.com/index/k-12-educators-practical-skills
-https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/
-https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/
 https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/
 https://www.bensbites.com/p/grok-x-cursor
 https://openai.com/index/deutsche-telekom
@@ -506,3 +498,15 @@ https://openai.com/index/introducing-dots
 https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/
 https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/
 https://techcrunch.com/2026/09/30/3-days-left-to-exhibit-at-techcrunch-disrupt-2026-2/
+https://www.therundown.ai/articles/argon-aims-to-return-google-to-the-frontier
+https://www.bensbites.com/p/openai-devday-2026
+https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign
+https://openai.com/index/helping-small-businesses-put-ai-to-work
+https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/
+https://deepmind.google/blog/introducing-synthid-bio/
+https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/
+https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/
+https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/
+https://www.anthropic.com/news/barclays-scales-claude
+https://openrouter.ai/openai/gpt-6.1-sol-pro
+https://openrouter.ai/openai/gpt-6.1-sol
