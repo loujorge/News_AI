@@ -356,6 +356,79 @@ def fetch_anthropic_news(history, max_articles=3):
     return articles, links_to_save
 
 
+# ── NEW MODELS (OPENROUTER) ───────────────────────────────────────────────────
+# O OpenRouter expõe um catálogo público com a data de lançamento de cada modelo
+# (campo "created"), normalmente no próprio dia em que o laboratório o lança.
+
+OPENROUTER_MODELS_URL = "https://openrouter.ai/api/v1/models"
+
+# Só laboratórios relevantes — o catálogo inclui muitos fine-tunes e routers.
+MODEL_PROVIDERS = {
+    "openai":         "OpenAI",
+    "anthropic":      "Anthropic",
+    "google":         "Google",
+    "x-ai":           "xAI",
+    "meta-llama":     "Meta",
+    "meta":           "Meta",
+    "mistralai":      "Mistral",
+    "deepseek":       "DeepSeek",
+    "qwen":           "Qwen",
+    "moonshotai":     "Moonshot AI",
+    "z-ai":           "Z.ai",
+    "minimax":        "MiniMax",
+    "xiaomi":         "Xiaomi",
+    "cohere":         "Cohere",
+    "amazon":         "Amazon",
+    "microsoft":      "Microsoft",
+    "nvidia":         "NVIDIA",
+    "bytedance-seed": "ByteDance",
+    "tencent":        "Tencent",
+    "baidu":          "Baidu",
+}
+
+def fetch_new_models(history, max_models=10):
+    """
+    Devolve (models, links_to_save) com os modelos lançados nas últimas
+    MAX_AGE_HOURS horas que ainda não foram anunciados.
+    """
+    try:
+        r = requests.get(OPENROUTER_MODELS_URL, headers=ARENA_HEADERS, timeout=30)
+        r.raise_for_status()
+        data = r.json()["data"]
+    except Exception as e:
+        print(f"⚠️  New models fetch failed: {e}")
+        return [], []
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_HOURS)
+    models = []
+    for m in data:
+        model_id = m.get("id", "")
+        # "~org/x-latest" são aliases; "org/x:batch", ":free", … são variantes do mesmo modelo.
+        if model_id.startswith("~") or ":" in model_id:
+            continue
+        provider = MODEL_PROVIDERS.get(model_id.split("/")[0])
+        if not provider:
+            continue
+        created = datetime.fromtimestamp(m.get("created", 0), tz=timezone.utc)
+        link = f"https://openrouter.ai/{model_id}"
+        if created < cutoff or link in history:
+            continue
+        # "Anthropic: Claude Sonnet 5.5" -> "Claude Sonnet 5.5"
+        name = m.get("name", model_id).split(": ", 1)[-1]
+        models.append({
+            "provider": provider,
+            "name": name,
+            "link": link,
+            "context_length": m.get("context_length"),
+            "created": created,
+            "date": created.astimezone(ZoneInfo("Europe/Lisbon")).strftime("%d %b, %H:%M"),
+        })
+
+    models.sort(key=lambda x: x["created"], reverse=True)
+    models = models[:max_models]
+    return models, [m["link"] for m in models]
+
+
 # ── ARENA AI HELPERS ─────────────────────────────────────────────────────────
 
 def arena_model_key(cell):
@@ -446,6 +519,34 @@ def generate_news_section_html(title, articles):
         <div class="grid">{cards}</div>
     </section>"""
 
+def generate_models_section_html(models):
+    if not models:
+        return ""
+    rows = ""
+    for m in models:
+        ctx = f"{m['context_length'] // 1000}K" if m["context_length"] else "—"
+        rows += f"""
+            <tr>
+                <td class="cat-cell">{m['provider']}</td>
+                <td class="model-cell"><a href="{m['link']}" target="_blank">{m['name']}</a></td>
+                <td class="cat-cell">{ctx}</td>
+                <td class="cat-cell">{m['date']}</td>
+            </tr>"""
+    return f"""
+    <section class="news-section">
+        <h2 class="section-title">🚀 New Models</h2>
+        <p class="arena-ts">Source: <a href="https://openrouter.ai/models" target="_blank">openrouter.ai/models</a></p>
+        <div class="arena-wrap">
+            <table class="arena-table">
+                <thead>
+                    <tr><th>Provider</th><th>Model</th><th>Context</th><th>Released</th></tr>
+                </thead>
+                <tbody>{rows}
+                </tbody>
+            </table>
+        </div>
+    </section>"""
+
 def generate_arena_section_html(leaders):
     if not leaders:
         return ""
@@ -476,18 +577,19 @@ def generate_arena_section_html(leaders):
         </div>
     </section>"""
 
-def generate_html(general_news, tech_news, arena_leaders):
+def generate_html(general_news, tech_news, arena_leaders, new_models):
     now = datetime.now()
     date_str = now.strftime("%d de %B, %Y")
 
+    models_html = generate_models_section_html(new_models)
     general_html = generate_news_section_html("🌍 General AI & Trends", general_news)
     tech_html = generate_news_section_html("⚙️ Technical Updates & Research", tech_news)
     arena_html = generate_arena_section_html(arena_leaders)
 
-    if not general_news and not tech_news and not arena_leaders:
+    if not general_news and not tech_news and not arena_leaders and not new_models:
         content = '<div class="empty"><h2>Tudo calmo por agora...</h2><p>Estão todos a treinar modelos! 😴</p></div>'
     else:
-        content = general_html + tech_html + arena_html
+        content = models_html + general_html + tech_html + arena_html
 
     template = f"""<!DOCTYPE html>
 <html lang="pt">
@@ -528,6 +630,7 @@ def generate_html(general_news, tech_news, arena_leaders):
         .arena-table tbody tr:hover {{ background: var(--bg); }}
         .cat-cell {{ color: var(--muted); font-size: 0.8rem; width: 35%; }}
         .model-cell {{ font-weight: 500; }}
+        .model-cell a {{ color: var(--text); }}
     </style>
 </head>
 <body>
@@ -547,10 +650,16 @@ def generate_html(general_news, tech_news, arena_leaders):
 
 # ── SLACK PAYLOAD ─────────────────────────────────────────────────────────────
 
-def build_slack_text(general_news, tech_news, arena_leaders):
+def build_slack_text(general_news, tech_news, arena_leaders, new_models):
     now = datetime.now(ZoneInfo("Europe/Lisbon"))
     date_str = now.strftime("%d %b %Y")
     lines = [f"*🤖 AI Devs Report — {date_str}*\n"]
+
+    if new_models:
+        lines.append("*🚀 New Models*")
+        for m in new_models:
+            lines.append(f"  • <{m['link']}|{m['name']}> _{m['provider']}_ — {m['date']}")
+        lines.append("")
 
     if arena_leaders:
         lines.append("*🏆 Arena AI — Category Leaders*")
@@ -670,12 +779,13 @@ if __name__ == "__main__":
     tech_articles += anth_articles
     tech_links    += anth_links
     arena_leaders             = fetch_arena_leaders()
+    new_models,    model_links = fetch_new_models(history)
 
     # 1) HTML
-    generate_html(gen_articles, tech_articles, arena_leaders)
+    generate_html(gen_articles, tech_articles, arena_leaders, new_models)
 
     # 2) Slack
-    slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders)
+    slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders, new_models)
     with open("slack_payload.txt", "w", encoding="utf-8") as f:
         f.write(slack_text)
 
@@ -689,10 +799,10 @@ if __name__ == "__main__":
         print(f"✅ Payload enviado para API (HTTP {status}).")
 
     # 5) Histórico
-    save_history(gen_links + tech_links)
+    save_history(gen_links + tech_links + model_links)
 
     print(
-        f"✅ Report gerado: {len(gen_articles)} generalistas, "
+        f"✅ Report gerado: {len(new_models)} modelos novos, {len(gen_articles)} generalistas, "
         f"{len(tech_articles)} técnicas (incl. {len(anth_articles)} Anthropic), "
         f"{len(arena_leaders)} categorias Arena. "
         f"JSON com {json_payload['count']} artigos."
