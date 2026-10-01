@@ -378,3 +378,4 @@ fastchat-t5-3b
 dolly-v2-12b
 llama-13b
 stablelm-tuned-alpha-7b
+gemini-4-argon
