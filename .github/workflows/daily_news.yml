@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "AI News Bot"
           git config --global user.email "bot@github.com"
-          git add history.txt || true
+          git add history.txt known_models.txt || true
           git commit -m "Update news history [skip ci]" || true
           git push || true
 
@@ -53,7 +53,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          MESSAGE=$(cat slack_payload.txt)
           PAGE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          curl -X POST -H 'Content-type: application/json' \
-            --data "{\"text\": \"$MESSAGE \n\n 📄 *Full Visual Report:* $PAGE_URL\"}" $SLACK_WEBHOOK_URL
+          jq -n --rawfile msg slack_payload.txt --arg url "$PAGE_URL" \
+            '{text: ($msg + "\n\n📄 *Full Visual Report:* " + $url), unfurl_links: false, unfurl_media: false}' \
+          | curl -X POST -H 'Content-type: application/json' --data @- "$SLACK_WEBHOOK_URL"
