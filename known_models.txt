@@ -379,3 +379,6 @@ dolly-v2-12b
 llama-13b
 stablelm-tuned-alpha-7b
 gemini-4-argon
+gpt-6-1-sol-max
+claude-sonnet-5-5
+step-5-preview
