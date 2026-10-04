@@ -1,10 +1,3 @@
-https://www.bensbites.com/p/how-to-use-gpt-56
-https://openai.com/index/managing-ai-investments-in-agentic-era
-https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/
-https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/
-https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/
-https://www.anthropic.com/news/claude-for-teachers
-https://www.anthropic.com/news/canadian-ai-research
 https://openai.com/index/advancing-ai-safety-through-state-and-federal-action
 https://openai.com/index/unlocking-self-improvement-gpt-red
 https://deepmind.google/blog/our-approach-to-bioresilience/
@@ -505,3 +498,6 @@ https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/
 https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/
 https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/
 https://www.anthropic.com/news/claude-frontier-academy
+https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/
+https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/
+https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/
