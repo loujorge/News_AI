@@ -1,9 +1,3 @@
-https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents
-https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/
-https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/
-https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/
-https://www.bensbites.com/p/ive-got-an-inkling
-https://openai.com/index/why-teens-deserve-access-safe-ai
 https://openai.com/index/cars24
 https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs
 https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials
@@ -504,3 +498,10 @@ https://openai.com/index/new-chatgpt-ads-format-and-measurement
 https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/
 https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/
 https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/
+https://www.therundown.ai/articles/the-deepseek-of-the-west-finally-has-a-model
+https://www.therundown.ai/articles/california-crashes-robot-fight-club
+https://www.bensbites.com/p/thoughts-from-san-francisco
+https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/
+https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/
+https://techcrunch.com/2026/10/06/get-all-your-questions-answered-at-techcrunch-disrupt-2026-the-full-breakout-session-agenda-revealed/
+https://openrouter.ai/mistralai/mistral-large-4-0
