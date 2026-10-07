@@ -383,3 +383,4 @@ gpt-6-1-sol-max
 claude-sonnet-5-5
 step-5-preview
 mistral-large-4
+nano-banana-2-1
