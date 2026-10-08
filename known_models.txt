@@ -384,3 +384,4 @@ claude-sonnet-5-5
 step-5-preview
 mistral-large-4
 nano-banana-2-1
+claude-haiku-5-5
