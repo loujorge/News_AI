@@ -1,13 +1,3 @@
-https://openai.com/index/safety-alignment-long-horizon-models
-https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/
-https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/
-https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/
-https://www.anthropic.com/news/rare-disease-research-grants
-https://www.bensbites.com/p/better-design-than-fable
-https://openai.com/index/introducing-chatgpt-small-business-program
-https://openai.com/index/hugging-face-model-evaluation-security-incident
-https://openai.com/index/david-velez-robin-vince-join-openai-boards
-https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/
 https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/
 https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/
 https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/
@@ -508,3 +498,13 @@ https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-mor
 https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/
 https://www.anthropic.com/news/genesis-mission-commitment
 https://openrouter.ai/anthropic/claude-haiku-5.5
+https://www.therundown.ai/articles/fired-openai-safety-researchers-hit-back
+https://www.therundown.ai/articles/meet-roger-the-bomb-squad-humanoid
+https://openai.com/index/sophos
+https://openai.com/index/oracle
+https://openai.com/index/pollo-ai
+https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/
+https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/
+https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/
+https://www.anthropic.com/news/2026-usage-policy-update
+https://www.anthropic.com/news/anthropic-cyber-mission
