@@ -1,13 +1,3 @@
-https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/
-https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/
-https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/
-https://www.anthropic.com/news/donation-public-first-action
-https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community
-https://openai.com/index/how-news-organizations-are-using-ai
-https://openai.com/index/advancing-the-next-era-of-national-science
-https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/
-https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push/
-https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/
 https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/
 https://www.anthropic.com/news/economic-futures-research-fund-agenda
 https://www.anthropic.com/news/anthropic-economic-index-connector
@@ -508,3 +498,8 @@ https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk
 https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/
 https://www.anthropic.com/news/2026-usage-policy-update
 https://www.anthropic.com/news/anthropic-cyber-mission
+https://www.therundown.ai/articles/apple-brings-touch-to-the-mac
+https://openai.com/index/asana-browser-agent
+https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/
+https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/
+https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/
