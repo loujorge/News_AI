@@ -1,7 +1,3 @@
-https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/
-https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/
-https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/
-https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/
 https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/
 https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/
 https://www.anthropic.com/news/claude-opus-5
@@ -502,3 +498,8 @@ https://www.therundown.ai/articles/microsoft-s-jacob-andreou-on-ai-s-product-gap
 https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/
 https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/
 https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/
+https://www.therundown.ai/articles/this-ai-factory-builds-tiny-machines-from-code
+https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/
+https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/
+https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/
+https://openrouter.ai/meta/muse-wonder
