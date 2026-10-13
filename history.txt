@@ -1,8 +1,3 @@
-https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/
-https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/
-https://www.anthropic.com/news/claude-opus-5
-https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/
-https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/
 https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/
 https://openai.com/index/how-ai-is-expanding-what-people-do-at-work
 https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/
@@ -503,3 +498,11 @@ https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wo
 https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/
 https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/
 https://openrouter.ai/meta/muse-wonder
+https://www.therundown.ai/articles/meta-watermelon-ripens-into-a-frontier-model
+https://www.therundown.ai/articles/ucla-builds-a-humanoid-from-smartphone
+https://www.bensbites.com/p/zucks-wonderfull
+https://deepmind.google/blog/gemini-4-argon-for-robotics/
+https://deepmind.google/blog/introducing-gemini-4-argon/
+https://techcrunch.com/2026/10/13/techcrunch-disrupt-2026-day-1/
+https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/
+https://techcrunch.com/2026/10/13/the-final-disrupt-stage-lineup-three-days-of-conversations-you-wont-hear-anywhere-outside-of-techcrunch-disrupt-2026/
