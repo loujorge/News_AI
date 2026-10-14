@@ -1,11 +1,3 @@
-https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/
-https://openai.com/index/how-ai-is-expanding-what-people-do-at-work
-https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/
-https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/
-https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/
-https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/
-https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/
-https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/
 https://www.anthropic.com/news/position-open-weights-models
 https://www.anthropic.com/news/cognizant-anthropic
 https://www.bensbites.com/p/opus-5-fable-5
@@ -506,3 +498,13 @@ https://deepmind.google/blog/introducing-gemini-4-argon/
 https://techcrunch.com/2026/10/13/techcrunch-disrupt-2026-day-1/
 https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/
 https://techcrunch.com/2026/10/13/the-final-disrupt-stage-lineup-three-days-of-conversations-you-wont-hear-anywhere-outside-of-techcrunch-disrupt-2026/
+https://www.therundown.ai/articles/openai-finds-a-bug-in-its-boardroom
+https://www.therundown.ai/articles/apple-goes-all-in-on-the-home
+https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic
+https://openai.com/index/higgsfield-longer-videos-voice
+https://deepmind.google/blog/on-device-ai-scam-detection-mddi/
+https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/
+https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/
+https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/
+https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/
+https://www.anthropic.com/news/singapore-office-opening
