@@ -386,3 +386,5 @@ mistral-large-4
 nano-banana-2-1
 claude-haiku-5-5
 muse-wonder
+muse-spark-open
+nemotron-3-5-super-vl
