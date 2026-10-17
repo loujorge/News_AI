@@ -388,3 +388,4 @@ claude-haiku-5-5
 muse-wonder
 muse-spark-open
 nemotron-3-5-super-vl
+deepseek-v4-1-flash-1017
