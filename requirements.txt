@@ -4,3 +4,4 @@ pandas
 lxml
 beautifulsoup4
 tzdata
+pyarrow
