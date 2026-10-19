@@ -37,7 +37,6 @@ FEEDS_TECH = {
 }
 
 HISTORY_FILE = "history.txt"
-KNOWN_MODELS_FILE = "known_models.txt"  # modelos já anunciados (ou já existentes no Arena)
 JSON_OUTPUT = "news_payload.json"
 MAX_AGE_HOURS = 48
 SUMMARY_MAX_CHARS = 280  # tamanho do resumo guardado no JSON
@@ -64,19 +63,23 @@ SOURCE_CATEGORY = {
     "Wired AI":       CATEGORY_IDS["TECH"],
 }
 
-ARENA_URL = "https://arena.ai/leaderboard/text"
-ARENA_HEADERS = {"User-Agent": "Mozilla/5.0"}
+# O arena.ai bloqueia pedidos de scripts (desafio Cloudflare, HTTP 403); usamos o
+# dataset oficial do Arena no Hugging Face. "text_style_control" é a variante que
+# o site mostra por defeito.
+ARENA_DATASET_URL = (
+    "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/resolve/main/"
+    "text_style_control/latest-00000-of-00001.parquet"
+)
 
-# O arena.ai deixou de ter uma tabela-resumo; cada categoria tem agora a sua página.
 ARENA_CATEGORIES = {
-    "Overall": "",
+    "Overall": "overall",
     "Expert": "expert",
-    "Hard Prompts": "hard-prompts",
+    "Hard Prompts": "hard_prompts",
     "Coding": "coding",
     "Math": "math",
-    "Creative Writing": "creative-writing",
-    "Instruction Following": "instruction-following",
-    "Longer Query": "longer-query",
+    "Creative Writing": "creative_writing",
+    "Instruction Following": "instruction_following",
+    "Longer Query": "longer_query",
 }
 
 HARDCODED_DICT = {
@@ -180,8 +183,7 @@ HARDCODED_DICT = {
     "Anthropicclaude-opus-4-7-high": 'Claude Opus 4.7',
     "Anthropicclaude-opus-5-max": 'Claude Opus 5',
     "Anthropicclaude-fable-5-high": 'Claude Fable 5',
-    "Anthropicclaude-opus-5.5-high": 'Claude Opus 5.5',
-    "gemini-4-argon-high": 'Gemini 4 Argon'
+    "Anthropicclaude-opus-5.5-high": 'Claude Opus 5.5'
 }
 
 
@@ -358,143 +360,19 @@ def fetch_anthropic_news(history, max_articles=3):
     return articles, links_to_save
 
 
-# ── NEW MODELS (OPENROUTER) ───────────────────────────────────────────────────
-# O OpenRouter expõe um catálogo público com a data de lançamento de cada modelo
-# (campo "created"), normalmente no próprio dia em que o laboratório o lança.
-
-OPENROUTER_MODELS_URL = "https://openrouter.ai/api/v1/models"
-
-# Só laboratórios relevantes — o catálogo inclui muitos fine-tunes e routers.
-MODEL_PROVIDERS = {
-    "openai":         "OpenAI",
-    "anthropic":      "Anthropic",
-    "google":         "Google",
-    "x-ai":           "xAI",
-    "meta-llama":     "Meta",
-    "meta":           "Meta",
-    "mistralai":      "Mistral",
-    "deepseek":       "DeepSeek",
-    "qwen":           "Qwen",
-    "moonshotai":     "Moonshot AI",
-    "z-ai":           "Z.ai",
-    "minimax":        "MiniMax",
-    "xiaomi":         "Xiaomi",
-    "cohere":         "Cohere",
-    "amazon":         "Amazon",
-    "microsoft":      "Microsoft",
-    "nvidia":         "NVIDIA",
-    "bytedance-seed": "ByteDance",
-    "tencent":        "Tencent",
-    "baidu":          "Baidu",
-}
-
-def model_norm(name):
-    """Chave de comparação entre fontes: 'GPT-6.1 Sol' e 'gpt-6.1-sol' -> 'gpt-6-1-sol'."""
-    name = re.sub(r"\s*\(.*?\)", "", name).lower()
-    return re.sub(r"[\s._/-]+", "-", name).strip("-")
-
-def get_known_models():
-    if not os.path.exists(KNOWN_MODELS_FILE):
-        return None
-    with open(KNOWN_MODELS_FILE, "r", encoding="utf-8") as f:
-        return set(l.strip() for l in f if l.strip())
-
-def save_known_models(norms):
-    with open(KNOWN_MODELS_FILE, "a", encoding="utf-8") as f:
-        for n in norms:
-            f.write(n + "\n")
-
-def fetch_new_models(history, known, max_models=10):
-    """
-    Devolve (models, links_to_save) com os modelos lançados nas últimas
-    MAX_AGE_HOURS horas que ainda não foram anunciados.
-    """
-    try:
-        r = requests.get(OPENROUTER_MODELS_URL, headers=ARENA_HEADERS, timeout=30)
-        r.raise_for_status()
-        data = r.json()["data"]
-    except Exception as e:
-        print(f"⚠️  New models fetch failed: {e}")
-        return [], []
-
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_HOURS)
-    models = []
-    for m in data:
-        model_id = m.get("id", "")
-        # "~org/x-latest" são aliases; "org/x:batch", ":free", … são variantes do mesmo modelo.
-        if model_id.startswith("~") or ":" in model_id:
-            continue
-        provider = MODEL_PROVIDERS.get(model_id.split("/")[0])
-        if not provider:
-            continue
-        created = datetime.fromtimestamp(m.get("created", 0), tz=timezone.utc)
-        link = f"https://openrouter.ai/{model_id}"
-        # "Anthropic: Claude Sonnet 5.5" -> "Claude Sonnet 5.5"
-        name = m.get("name", model_id).split(": ", 1)[-1]
-        if created < cutoff or link in history or model_norm(name) in known:
-            continue
-        models.append({
-            "provider": provider,
-            "name": name,
-            "norm": model_norm(name),
-            "link": link,
-            "context_length": m.get("context_length"),
-            "created": created,
-            "date": created.astimezone(ZoneInfo("Europe/Lisbon")).strftime("%d %b, %H:%M"),
-        })
-
-    models.sort(key=lambda x: x["created"], reverse=True)
-    models = models[:max_models]
-    return models, [m["link"] for m in models]
-
-
 # ── ARENA AI HELPERS ─────────────────────────────────────────────────────────
 
-def arena_model_parts(cell):
-    """Devolve (org, nome) da célula do modelo; org vem do <title> do logo e pode ser ''.
-    f"{org}{nome}" reproduz o texto do antigo read_html — o formato das chaves do HARDCODED_DICT.
-    """
-    svg = cell.find("svg")
-    title = svg.find("title", recursive=False) if svg else None
-    org = title.get_text(strip=True) if title else ""
-    name_span = cell.find("span", attrs={"title": True})
-    if not name_span:
-        raise RuntimeError("Model name span not found in Arena row.")
-    return org, name_span["title"].strip()
+def fetch_arena_df():
+    return pd.read_parquet(ARENA_DATASET_URL)
 
-_arena_rows_cache = {}
-
-def fetch_arena_rows(slug):
-    """Devolve [(rank, org, nome)] da página da categoria (cada página só é pedida uma vez)."""
-    if slug in _arena_rows_cache:
-        return _arena_rows_cache[slug]
-    url = f"{ARENA_URL}/{slug}" if slug else ARENA_URL
-    r = requests.get(url, headers=ARENA_HEADERS, timeout=30)
-    r.raise_for_status()
-    rows = BeautifulSoup(r.text, "lxml").select("table tbody tr")
-    # Slugs inválidos devolvem 200 na mesma, só que sem tabela.
-    if not rows:
-        raise RuntimeError(f"No leaderboard table at {url}.")
-    parsed = []
-    for row in rows:
-        cells = row.find_all("td", recursive=False)
-        rank_text = cells[0].get_text(strip=True)
-        if not rank_text.isdigit():
-            continue
-        parsed.append((int(rank_text), *arena_model_parts(cells[2])))
-    if not parsed:
-        raise RuntimeError(f"No ranked rows parsed at {url}.")
-    _arena_rows_cache[slug] = parsed
-    return parsed
-
-def fetch_arena_rank1_key(slug):
-    _, org, name = min(fetch_arena_rows(slug), key=lambda row: row[0])
-    return f"{org}{name}"
-
-def compute_arena_rank1():
+def compute_arena_rank1(df):
     results = []
-    for category, slug in ARENA_CATEGORIES.items():
-        model_name = fetch_arena_rank1_key(slug)
+    for category, key in ARENA_CATEGORIES.items():
+        rows = df[df["category"] == key]
+        if rows.empty:
+            raise RuntimeError(f"Arena category '{key}' not found in dataset.")
+        best = rows.sort_values(["rank", "rating"], ascending=[True, False]).iloc[0]
+        model_name = str(best["model_name"])
         mapped = HARDCODED_DICT.get(model_name)
         if isinstance(mapped, str):
             model_name = mapped
@@ -504,93 +382,11 @@ def compute_arena_rank1():
 def fetch_arena_leaders():
     """Returns list of {category, model} for rank-1 per category. Returns [] on failure."""
     try:
-        return compute_arena_rank1()
+        df = fetch_arena_df()
+        return compute_arena_rank1(df)
     except Exception as e:
         print(f"⚠️  Arena fetch failed: {e}")
         return []
-
-# Sufixos de esforço/variante que o Arena acrescenta ao mesmo modelo
-# ("-high", "-xhigh", "-thinking-32k", "-20251101", "(xHigh)", …).
-ARENA_VARIANT_SUFFIX = re.compile(r"-(x?high|medium|low|minimal|thinking|\d+k|\d{8})$", re.I)
-
-# Prefixo do nome -> laboratório, para linhas do Arena sem logo com <title>.
-ARENA_NAME_PROVIDERS = [
-    ("gemini", "Google"), ("gemma", "Google"), ("gpt", "OpenAI"), ("chatgpt", "OpenAI"),
-    ("o1", "OpenAI"), ("o3", "OpenAI"), ("o4", "OpenAI"), ("claude", "Anthropic"),
-    ("grok", "xAI"), ("kimi", "Moonshot AI"), ("qwen", "Qwen"), ("glm", "Z.ai"),
-    ("deepseek", "DeepSeek"), ("mistral", "Mistral"), ("magistral", "Mistral"),
-    ("mixtral", "Mistral"), ("ministral", "Mistral"), ("mimo", "Xiaomi"),
-    ("ernie", "Baidu"), ("hunyuan", "Tencent"), ("muse", "Meta"), ("llama", "Meta"),
-    ("minimax", "MiniMax"), ("amazon", "Amazon"), ("nova", "Amazon"),
-    ("command", "Cohere"), ("mai-", "Microsoft"), ("phi", "Microsoft"),
-    ("granite", "IBM"), ("nemotron", "NVIDIA"), ("jamba", "AI21"),
-]
-
-# Grafia dos tokens que não ficam bem com capitalize().
-TOKEN_SPELLING = {"gpt": "GPT", "glm": "GLM", "deepseek": "DeepSeek", "mimo": "MiMo", "minimax": "MiniMax"}
-
-def arena_display(org, name):
-    """Devolve (nome bonito, chave normalizada) de uma linha do Arena."""
-    mapped = HARDCODED_DICT.get(f"{org}{name}")
-    if isinstance(mapped, str):
-        return mapped, model_norm(mapped)
-    base = re.sub(r"\s*\(.*?\)", "", name).strip()
-    while True:
-        stripped = ARENA_VARIANT_SUFFIX.sub("", base)
-        if stripped == base:
-            break
-        base = stripped
-    pretty = " ".join(
-        TOKEN_SPELLING.get(t.lower(), t[:1].upper() + t[1:])
-        for t in base.split("-")
-    )
-    pretty = re.sub(r"(?<=\d) (?=\d+(?: |$))", ".", pretty)  # "Claude Opus 4 8" -> "Claude Opus 4.8"
-    pretty = re.sub(r"^GPT (?=\d)", "GPT-", pretty)   # "GPT 5.5" -> "GPT-5.5"
-    return pretty, model_norm(base)
-
-def arena_provider(org, name):
-    if org:
-        return org
-    lower = name.lower()
-    for prefix, provider in ARENA_NAME_PROVIDERS:
-        if lower.startswith(prefix):
-            return provider
-    return "Other"
-
-def fetch_arena_new_models(known, max_models=10):
-    """
-    Modelos da página Overall do Arena que ainda não estão em known.
-    Devolve (models, norms_vistos). Se known for None (primeira execução),
-    não anuncia nada — só devolve tudo para preencher o ficheiro.
-    """
-    try:
-        rows = fetch_arena_rows("")
-    except Exception as e:
-        print(f"⚠️  Arena new models fetch failed: {e}")
-        return [], []
-
-    now = datetime.now(timezone.utc)
-    models, seen = [], []
-    for rank, org, name in sorted(rows):
-        pretty, norm = arena_display(org, name)
-        if norm in seen or (known is not None and norm in known):
-            continue
-        seen.append(norm)
-        models.append({
-            "provider": arena_provider(org, name),
-            "name": pretty,
-            "norm": norm,
-            "link": ARENA_URL,
-            "context_length": None,
-            "created": now,
-            "date": f"via Arena (#{rank})",
-        })
-
-    if known is None:
-        print(f"ℹ️  {KNOWN_MODELS_FILE} criado com {len(seen)} modelos do Arena (nada anunciado).")
-        return [], seen
-    models = models[:max_models]
-    return models, [m["norm"] for m in models]
 
 
 # ── HTML GENERATION ───────────────────────────────────────────────────────────
@@ -630,34 +426,6 @@ def generate_news_section_html(title, articles):
         <div class="grid">{cards}</div>
     </section>"""
 
-def generate_models_section_html(models):
-    if not models:
-        return ""
-    rows = ""
-    for m in models:
-        ctx = f"{m['context_length'] // 1000}K" if m["context_length"] else "—"
-        rows += f"""
-            <tr>
-                <td class="cat-cell">{m['provider']}</td>
-                <td class="model-cell"><a href="{m['link']}" target="_blank">{m['name']}</a></td>
-                <td class="cat-cell">{ctx}</td>
-                <td class="cat-cell">{m['date']}</td>
-            </tr>"""
-    return f"""
-    <section class="news-section">
-        <h2 class="section-title">🚀 New Models</h2>
-        <p class="arena-ts">Sources: <a href="https://openrouter.ai/models" target="_blank">openrouter.ai/models</a> · <a href="https://arena.ai/leaderboard" target="_blank">arena.ai/leaderboard</a></p>
-        <div class="arena-wrap">
-            <table class="arena-table">
-                <thead>
-                    <tr><th>Provider</th><th>Model</th><th>Context</th><th>Released</th></tr>
-                </thead>
-                <tbody>{rows}
-                </tbody>
-            </table>
-        </div>
-    </section>"""
-
 def generate_arena_section_html(leaders):
     if not leaders:
         return ""
@@ -688,19 +456,18 @@ def generate_arena_section_html(leaders):
         </div>
     </section>"""
 
-def generate_html(general_news, tech_news, arena_leaders, new_models):
+def generate_html(general_news, tech_news, arena_leaders):
     now = datetime.now()
     date_str = now.strftime("%d de %B, %Y")
 
-    models_html = generate_models_section_html(new_models)
     general_html = generate_news_section_html("🌍 General AI & Trends", general_news)
     tech_html = generate_news_section_html("⚙️ Technical Updates & Research", tech_news)
     arena_html = generate_arena_section_html(arena_leaders)
 
-    if not general_news and not tech_news and not arena_leaders and not new_models:
+    if not general_news and not tech_news and not arena_leaders:
         content = '<div class="empty"><h2>Tudo calmo por agora...</h2><p>Estão todos a treinar modelos! 😴</p></div>'
     else:
-        content = models_html + general_html + tech_html + arena_html
+        content = general_html + tech_html + arena_html
 
     template = f"""<!DOCTYPE html>
 <html lang="pt">
@@ -741,7 +508,6 @@ def generate_html(general_news, tech_news, arena_leaders, new_models):
         .arena-table tbody tr:hover {{ background: var(--bg); }}
         .cat-cell {{ color: var(--muted); font-size: 0.8rem; width: 35%; }}
         .model-cell {{ font-weight: 500; }}
-        .model-cell a {{ color: var(--text); }}
     </style>
 </head>
 <body>
@@ -761,16 +527,10 @@ def generate_html(general_news, tech_news, arena_leaders, new_models):
 
 # ── SLACK PAYLOAD ─────────────────────────────────────────────────────────────
 
-def build_slack_text(general_news, tech_news, arena_leaders, new_models):
+def build_slack_text(general_news, tech_news, arena_leaders):
     now = datetime.now(ZoneInfo("Europe/Lisbon"))
     date_str = now.strftime("%d %b %Y")
     lines = [f"*🤖 AI Devs Report — {date_str}*\n"]
-
-    if new_models:
-        lines.append("*🚀 New Models*")
-        for m in new_models:
-            lines.append(f"  • <{m['link']}|{m['name']}> _{m['provider']}_ — {m['date']}")
-        lines.append("")
 
     if arena_leaders:
         lines.append("*🏆 Arena AI — Category Leaders*")
@@ -891,20 +651,11 @@ if __name__ == "__main__":
     tech_links    += anth_links
     arena_leaders             = fetch_arena_leaders()
 
-    # Modelos novos: OpenRouter (com data de lançamento) + Arena (apanha modelos
-    # que ainda não estão no OpenRouter). known=None => primeira execução.
-    known = get_known_models()
-    or_models, model_links = fetch_new_models(history, known or set())
-    arena_models, arena_norms = fetch_arena_new_models(
-        None if known is None else known | {m["norm"] for m in or_models}
-    )
-    new_models = or_models + arena_models
-
     # 1) HTML
-    generate_html(gen_articles, tech_articles, arena_leaders, new_models)
+    generate_html(gen_articles, tech_articles, arena_leaders)
 
     # 2) Slack
-    slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders, new_models)
+    slack_text = build_slack_text(gen_articles, tech_articles, arena_leaders)
     with open("slack_payload.txt", "w", encoding="utf-8") as f:
         f.write(slack_text)
 
@@ -918,11 +669,10 @@ if __name__ == "__main__":
         print(f"✅ Payload enviado para API (HTTP {status}).")
 
     # 5) Histórico
-    save_history(gen_links + tech_links + model_links)
-    save_known_models([m["norm"] for m in or_models] + arena_norms)
+    save_history(gen_links + tech_links)
 
     print(
-        f"✅ Report gerado: {len(new_models)} modelos novos, {len(gen_articles)} generalistas, "
+        f"✅ Report gerado: {len(gen_articles)} generalistas, "
         f"{len(tech_articles)} técnicas (incl. {len(anth_articles)} Anthropic), "
         f"{len(arena_leaders)} categorias Arena. "
         f"JSON com {json_payload['count']} artigos."
