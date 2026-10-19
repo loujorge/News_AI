@@ -1,6 +1,3 @@
-https://openai.com/index/continuous-voice-interaction-with-gpt-live
-https://openai.com/index/circles
-https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/
 https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/
 https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/
 https://www.bensbites.com/p/what-my-agent-knows-about-me
@@ -501,3 +498,7 @@ https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017
 https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/
 https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/
 https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
+https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/
+https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/
+https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/
+https://www.anthropic.com/news/public-benefit-fund
