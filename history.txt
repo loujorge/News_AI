@@ -1,7 +1,3 @@
-https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/
-https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/
-https://www.bensbites.com/p/what-my-agent-knows-about-me
-https://openai.com/index/third-party-cyber-evaluations-involving-openai-models
 https://openai.com/index/learn-teach-chatgpt-work-codex
 https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/
 https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/
@@ -502,3 +498,11 @@ https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-
 https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/
 https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/
 https://www.anthropic.com/news/public-benefit-fund
+https://www.therundown.ai/articles/anthropic-co-founder-says-the-singularity-is-underway
+https://www.therundown.ai/articles/softbank-18b-bet-on-robot-guards
+https://www.therundown.ai/articles/anthropic-designs-a-pay-package-for-the-public
+https://www.bensbites.com/p/how-i-built-my-everything-app
+https://openai.com/index/low-resource-programming-languages
+https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/
+https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/
+https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/
