@@ -1,11 +1,3 @@
-https://openai.com/index/learn-teach-chatgpt-work-codex
-https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/
-https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/
-https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/
-https://www.anthropic.com/news/tino-cuellar
-https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/
-https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/
-https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/
 https://www.bensbites.com/p/im-using-a-new-agent-app
 https://openai.com/index/hsp-gruppe
 https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt
@@ -506,3 +498,12 @@ https://openai.com/index/low-resource-programming-languages
 https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/
 https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/
 https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/
+https://www.therundown.ai/articles/sam-altman-three-endings-for-the-ai-safety-race
+https://www.therundown.ai/articles/what-ai-sees-in-your-selfie
+https://openai.com/index/openai-models-google-cloud
+https://openai.com/index/ted-taylor-restaurant
+https://openai.com/index/terminal-x
+https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/
+https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/
+https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/
+https://www.anthropic.com/news/distillation-defenses
