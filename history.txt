@@ -1,11 +1,3 @@
-https://openai.com/index/replit
-https://openai.com/index/pacing-model-development-cyber-capabilities
-https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push
-https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/
-https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
-https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/
-https://www.therundown.ai/articles/claude-adds-protein-design-to-its-resume
-https://www.bensbites.com/p/simple-agents
 https://openai.com/index/introducing-ai-futures
 https://openai.com/index/stampli
 https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/
@@ -506,3 +498,10 @@ https://openai.com/index/ropes-gray-ai-diligence
 https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/
 https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/
 https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/
+https://www.therundown.ai/articles/binance-hit-by-crypto-biggest-heist-ever
+https://openai.com/index/helping-websites-express-ai-training-preferences
+https://openai.com/index/community-safety-report-and-new-protections-for-teens
+https://openai.com/index/fair-use-benefits-everyone
+https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/
+https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/
+https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/
