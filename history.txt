@@ -1,6 +1,3 @@
-https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/
-https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/
-https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/
 https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/
 https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/
 https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/
@@ -501,3 +498,9 @@ https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governm
 https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/
 https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/
 https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/
+https://www.therundown.ai/articles/ai-backlash-heads-to-the-polls
+https://openai.com/index/grid-protectors-program
+https://openai.com/index/lifeval
+https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/
+https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/
+https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/
