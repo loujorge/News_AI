@@ -1,9 +1,3 @@
-https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/
-https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/
-https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/
-https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/
-https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/
-https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/
 https://www.therundown.ai/articles/humanoids-beat-usain-bolt-100m-record
 https://www.therundown.ai/articles/a-mystery-challenger-at-the-ai-frontier
 https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia
@@ -504,3 +498,12 @@ https://openai.com/index/lifeval
 https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/
 https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/
 https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/
+https://www.therundown.ai/articles/mit-shows-ai-improving-ai-no-training-required
+https://www.therundown.ai/articles/meta-builds-its-first-humanoid-robot
+https://www.bensbites.com/p/if-you-feel-behind-right-now-dont
+https://openai.com/index/heimstaden
+https://openai.com/index/scaling-git-at-openai
+https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai
+https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/
+https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/
+https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/
