@@ -1,12 +1,3 @@
-https://www.therundown.ai/articles/humanoids-beat-usain-bolt-100m-record
-https://www.therundown.ai/articles/a-mystery-challenger-at-the-ai-frontier
-https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia
-https://openai.com/index/gpt-5-6-in-kiro
-https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/
-https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/
-https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/
-https://www.therundown.ai/articles/the-spacex-nvidia-partnership-heads-for-orbit
-https://www.bensbites.com/p/agents-on-your-mobile
 https://openai.com/index/the-full-stack-behind-abundant-intelligence
 https://openai.com/index/jalapeno-first-results
 https://openai.com/index/introducing-admin-plugin
@@ -507,3 +498,12 @@ https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai
 https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/
 https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/
 https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/
+https://www.therundown.ai/articles/apple-cracks-the-door-open-to-siri-ai
+https://www.therundown.ai/articles/apple-cant-build-enough-iphone-duos
+https://openai.com/index/openai-to-acquire-pierre
+https://openai.com/index/daybreak-red-aws-govcloud
+https://openai.com/index/accelerating-engineering-for-the-physical-world
+https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
+https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/
+https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/
+https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/
