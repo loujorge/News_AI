@@ -1,12 +1,3 @@
-https://openai.com/index/the-full-stack-behind-abundant-intelligence
-https://openai.com/index/jalapeno-first-results
-https://openai.com/index/introducing-admin-plugin
-https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/
-https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/
-https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/
-https://www.anthropic.com/news/wellbeing-research-grants
-https://www.therundown.ai/articles/the-ox-alpha-mystery-ends-with-z-ai
-https://www.therundown.ai/articles/openai-first-ai-chip-brings-the-heat
 https://www.bensbites.com/p/who-let-the-agents-in
 https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training
 https://openai.com/index/expanding-our-presence-in-brazil
@@ -507,3 +498,11 @@ https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
 https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/
 https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/
 https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/
+https://www.therundown.ai/articles/ai-agents-can-now-make-your-phone-calls
+https://www.bensbites.com/p/craft-and-taste
+https://openai.com/index/setting-new-standard-responsible-ai-infrastructure
+https://openai.com/index/a-thousand-fewer-paths-to-root
+https://openai.com/index/introducing-images-2-6
+https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/
+https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/
+https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/
