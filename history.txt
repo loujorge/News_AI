@@ -1,12 +1,3 @@
-https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them
-https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer
-https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/
-https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/
-https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/
-https://www.anthropic.com/news/model-hardware-standard-research-preview
-https://www.therundown.ai/articles/every-machine-is-about-to-speak-claude
-https://www.therundown.ai/articles/cyborg-roaches-become-tiny-paramedics
-https://www.bensbites.com/p/how-i-built-this-21f
 https://openai.com/index/supporting-next-generation-ai-startups-thailand
 https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/
 https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/
@@ -507,3 +498,9 @@ https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-l
 https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/
 https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/
 https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/
+https://www.therundown.ai/articles/big-tech-sues-to-save-the-feed
+https://openai.com/index/partnering-with-hacktron
+https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science
+https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/
+https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/
+https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/
