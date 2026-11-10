@@ -1,7 +1,3 @@
-https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/
-https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/
-https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/
-https://www.therundown.ai/articles/openai-cuts-out-spacex-owned-cursor
 https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads
 https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/
 https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/
@@ -502,3 +498,16 @@ https://www.therundown.ai/articles/jensen-huang-admits-affair-amid-spy-claims
 https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/
 https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/
 https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/
+https://www.therundown.ai/articles/anthropic-says-pacing-not-pausing-with-fable-5-2
+https://www.therundown.ai/articles/amazon-builds-its-home-robot-team
+https://www.bensbites.com/p/how-i-got-seduced
+https://openai.com/index/helping-caregivers-use-ai-in-everyday-life
+https://openai.com/index/closing-ai-guidance-gap-education
+https://openai.com/index/ai-effect-on-freelance-work
+https://deepmind.google/blog/gemini-4-carbon-is-now-available/
+https://deepmind.google/blog/introducing-alphaproof-code/
+https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/
+https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/
+https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/
+https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/
+https://www.anthropic.com/news/roadshow-launch
