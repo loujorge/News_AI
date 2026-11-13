@@ -1,11 +1,3 @@
-https://www.anthropic.com/news/enterprise-frontier-safeguards
-https://www.therundown.ai/articles/meta-google-join-the-ai-launch-party
-https://openai.com/index/atv-big-air-tour
-https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/
-https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/
-https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/
-https://techcrunch.com/2026/09/02/the-builders-stage-brings-practical-strategies-for-scaling-startups-to-techcrunch-disrupt-2026/
-https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/
 https://www.therundown.ai/articles/openai-generational-leap-with-gpt-6-astra
 https://www.therundown.ai/articles/uber-beats-waymo-to-london
 https://www.bensbites.com/p/fable-51
@@ -506,3 +498,12 @@ https://openai.com/index/jiostar-vijay-seshadri
 https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/
 https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/
 https://techcrunch.com/2026/11/12/trump-floats-apple-chairman-tim-cook-as-jensen-huangs-successor/
+https://www.therundown.ai/articles/nvidia-enters-life-without-jensen-huang
+https://www.therundown.ai/articles/amazon-turns-ring-cameras-into-robots
+https://openai.com/index/introducing-chatgpt-wallet
+https://openai.com/business/customer-stories/amplitude
+https://openai.com/business/customer-stories/gondola
+https://deepmind.google/blog/introducing-gemini-4-hydrogen/
+https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/
+https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/
+https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/
