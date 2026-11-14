@@ -1,12 +1,3 @@
-https://www.therundown.ai/articles/openai-generational-leap-with-gpt-6-astra
-https://www.therundown.ai/articles/uber-beats-waymo-to-london
-https://www.bensbites.com/p/fable-51
-https://openai.com/index/daybreak-for-frontline-defenders
-https://openai.com/index/legora-financial-statement-review-with-astra
-https://openai.com/index/playco-game-prototyping-with-astra
-https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/
-https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/
 https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/
 https://www.bensbites.com/p/scraping-107m-rows-of-data-to-build
 https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/
@@ -507,3 +498,8 @@ https://deepmind.google/blog/introducing-gemini-4-hydrogen/
 https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/
 https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/
 https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/
+https://www.therundown.ai/articles/microsoft-s-outlook-outage-hits-day-two
+https://openai.com/business/customer-stories/shield
+https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/
+https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/
+https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/
