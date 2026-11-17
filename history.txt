@@ -1,10 +1,3 @@
-https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/
-https://www.therundown.ai/articles/another-openai-agent-swarm-surfaces
-https://openai.com/index/supporting-independent-journalism-in-ukraine
-https://openai.com/index/an-alien-mind
-https://openai.com/index/research-acceleration-view-inside-openai
-https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/
-https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/
 https://www.therundown.ai/articles/inside-openai-agent-powered-research-boom
 https://www.therundown.ai/articles/a-catwalk-at-ifa-but-for-robots
 https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
@@ -505,3 +498,12 @@ https://openai.com/index/science-at-the-frontier
 https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/
 https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/
 https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/
+https://www.therundown.ai/articles/california-takes-openai-to-court
+https://www.therundown.ai/articles/tesla-cybercab-can-now-be-yours-sort-of
+https://www.bensbites.com/p/productiv-icky
+https://openai.com/index/strengthening-nato-allied-cyber-defences-ai
+https://openai.com/index/introducing-openai-for-chile
+https://openai.com/business/customer-stories/revolut
+https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/
+https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/
+https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/
