@@ -1,12 +1,3 @@
-https://www.therundown.ai/articles/inside-openai-agent-powered-research-boom
-https://www.therundown.ai/articles/a-catwalk-at-ifa-but-for-robots
-https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
-https://www.therundown.ai/articles/openai-secret-model-settles-a-1m-math-problem
-https://www.therundown.ai/articles/apple-unfolds-its-decade-long-iphone
-https://www.bensbites.com/p/the-first-gpt-6-model
-https://openai.com/index/codex-quantum-computing-experiments
-https://openai.com/index/the-work-now-within-reach
-https://openai.com/index/introducing-chatgpt-images-2-5
 https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
 https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/
 https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/
@@ -507,3 +498,11 @@ https://openai.com/business/customer-stories/revolut
 https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/
 https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/
 https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/
+https://www.therundown.ai/articles/openai-newest-release-lands-to-rough-reviews
+https://www.therundown.ai/articles/the-us-has-an-outage-problem
+https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership
+https://openai.com/index/advancing-chip-design-with-our-models
+https://openai.com/index/introducing-gpt-6-2-astra-sol
+https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/
+https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/
+https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/
