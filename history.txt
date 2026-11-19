@@ -1,11 +1,3 @@
-https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
-https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/
-https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/
-https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/
-https://www.therundown.ai/articles/an-anthropic-exit-becomes-an-extinction-debate
-https://openai.com/index/ai-policy-window
-https://openai.com/index/gpt-6-astra-next-generation-work
-https://openai.com/index/paul-christiano-joins-openai-foundation-board
 https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/
 https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/
 https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/
@@ -506,3 +498,14 @@ https://openai.com/index/introducing-gpt-6-2-astra-sol
 https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/
 https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/
 https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/
+https://www.therundown.ai/articles/google-shipping-spree-continues-with-neon
+https://www.bensbites.com/p/my-wife-thinks-ai-is-a-person
+https://openai.com/index/the-silent-consensus
+https://openai.com/index/research-acceleration-jagged-frontier
+https://openai.com/business/customer-stories/sumitomo-life
+https://deepmind.google/blog/introducing-gemini-4-neon/
+https://deepmind.google/blog/genie-4-is-now-available/
+https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/
+https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/
+https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/
+https://www.anthropic.com/news/anthropic-prices-initial-public-offering
