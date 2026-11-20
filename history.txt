@@ -1,14 +1,3 @@
-https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/
-https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/
-https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/
-https://www.therundown.ai/articles/anthropic-opens-the-files-on-global-claude-misuse
-https://www.therundown.ai/articles/tesla-cybercab-is-already-getting-weird
-https://www.bensbites.com/p/everyone-needs-a-muse
-https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials
-https://openai.com/index/put-data-to-work
-https://openai.com/index/introducing-chatgpt-financial-services
-https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/
-https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/
 https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
 https://www.therundown.ai/articles/apple-turns-watch-into-ai-notetaker
 https://www.bensbites.com/p/telling-ai-to-design-is-hard
@@ -509,3 +498,12 @@ https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-c
 https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/
 https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/
 https://www.anthropic.com/news/anthropic-prices-initial-public-offering
+https://www.therundown.ai/articles/anthropic-pulls-off-the-biggest-ipo-ever
+https://www.therundown.ai/articles/waymo-shuts-down-freeway-rides-everywhere
+https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast
+https://openai.com/business/learn/deploying-daybreak-red
+https://openai.com/business/learn/pr-scans-demo
+https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/
+https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/
+https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/
+https://www.anthropic.com/news/ipo-close
