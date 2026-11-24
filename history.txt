@@ -1,10 +1,3 @@
-https://openai.com/index/fyxer
-https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/
-https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/
-https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/
-https://www.therundown.ai/articles/chatgpt-co-creator-launches-a-new-kind-of-ai
-https://www.therundown.ai/articles/us-confirms-weapons-are-in-orbit
-https://openai.com/index/reimagining-advertising-with-ai
 https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/
 https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/
 https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/
@@ -505,3 +498,12 @@ https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-f
 https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/
 https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/
 https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/
+https://www.therundown.ai/articles/jensen-huang-returns-to-nvidia
+https://www.therundown.ai/articles/nvidia-robot-king-returns
+https://www.bensbites.com/p/commitment-issues-app-edition
+https://openai.com/index/searching-for-distant-planets-with-astra
+https://openai.com/business/customer-stories/intentful-dots
+https://openai.com/business/customer-stories/ifood
+https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/
+https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/
+https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/
