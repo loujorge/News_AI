@@ -1,7 +1,3 @@
-https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/
-https://www.anthropic.com/news/life-sciences-verification-program
-https://www.therundown.ai/articles/meta-less-creepy-smart-glasses
-https://openai.com/index/australian-youth-safety-blueprint
 https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/
 https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/
 https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/
@@ -502,3 +498,8 @@ https://www.therundown.ai/articles/your-ai-cheat-sheet-for-thanksgiving-dinner
 https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/
 https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/
 https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/
+https://www.therundown.ai/articles/ai-takes-a-swing-at-physics-biggest-puzzle
+https://www.therundown.ai/articles/your-future-housekeeper-might-be-an-xpeng
+https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/
+https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/
+https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/
